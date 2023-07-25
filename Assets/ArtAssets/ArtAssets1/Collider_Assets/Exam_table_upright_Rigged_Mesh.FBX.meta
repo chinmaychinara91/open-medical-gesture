@@ -1,0 +1,189 @@
+fileFormatVersion: 2
+guid: 9a8b49c6aff44504b9a72a88b3725e9e
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Chain_Lever_JNT
+    100002: Chair_JNT
+    100004: Exam_table_upright
+    100006: //RootNode
+    100008: extracted_03
+    100010: extracted_04
+    100012: extracted_05
+    100014: extracted_06
+    100016: extracted_07
+    100018: extracted_08
+    100020: extracted_11
+    100022: extracted_12
+    100024: extracted_16
+    100026: extracted_19
+    100028: extracted_20
+    100030: extracted_21
+    100032: extracted_22
+    100034: extracted_23
+    100036: extracted_24
+    100038: extracted_25
+    100040: Front_Drawer_01_JNT
+    100042: Front_Drawer_02_JNT
+    100044: Meshes
+    100046: Right_Drawer_01_JNT
+    100048: Right_Drawer_02_JNT
+    100050: Right_Drawer_03_JNT
+    100052: Root
+    100054: Stool_JNT
+    400000: Chain_Lever_JNT
+    400002: Chair_JNT
+    400004: Exam_table_upright
+    400006: //RootNode
+    400008: extracted_03
+    400010: extracted_04
+    400012: extracted_05
+    400014: extracted_06
+    400016: extracted_07
+    400018: extracted_08
+    400020: extracted_11
+    400022: extracted_12
+    400024: extracted_16
+    400026: extracted_19
+    400028: extracted_20
+    400030: extracted_21
+    400032: extracted_22
+    400034: extracted_23
+    400036: extracted_24
+    400038: extracted_25
+    400040: Front_Drawer_01_JNT
+    400042: Front_Drawer_02_JNT
+    400044: Meshes
+    400046: Right_Drawer_01_JNT
+    400048: Right_Drawer_02_JNT
+    400050: Right_Drawer_03_JNT
+    400052: Root
+    400054: Stool_JNT
+    2100000: ss metal
+    2100002: gray plastic
+    2100004: seat
+    2100006: stool top bump
+    2100008: stool top
+    2100010: pale green plastic
+    4300000: Exam_table_upright
+    4300002: extracted_03
+    4300004: extracted_04
+    4300006: extracted_05
+    4300008: extracted_06
+    4300010: extracted_07
+    4300012: extracted_08
+    4300014: extracted_11
+    4300016: extracted_12
+    4300018: extracted_16
+    4300020: extracted_19
+    4300022: extracted_20
+    4300024: extracted_21
+    4300026: extracted_22
+    4300028: extracted_23
+    4300030: extracted_24
+    4300032: extracted_25
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Exam_table_upright
+    13700002: extracted_03
+    13700004: extracted_04
+    13700006: extracted_05
+    13700008: extracted_06
+    13700010: extracted_07
+    13700012: extracted_08
+    13700014: extracted_11
+    13700016: extracted_12
+    13700018: extracted_16
+    13700020: extracted_19
+    13700022: extracted_20
+    13700024: extracted_21
+    13700026: extracted_22
+    13700028: extracted_23
+    13700030: extracted_24
+    13700032: extracted_25
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

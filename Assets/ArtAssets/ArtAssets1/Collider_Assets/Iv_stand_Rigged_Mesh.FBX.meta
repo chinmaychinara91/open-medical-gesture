@@ -1,0 +1,265 @@
+fileFormatVersion: 2
+guid: 06da04df0d415134b8d338f5eab11e38
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: extracted_01
+    100002: extracted_02
+    100004: extracted_03
+    100006: extracted_04
+    100008: extracted_05
+    100010: extracted_06
+    100012: extracted_07
+    100014: extracted_08
+    100016: extracted_09
+    100018: extracted_10
+    100020: extracted_11
+    100022: extracted_12
+    100024: extracted_13
+    100026: extracted_14
+    100028: extracted_15
+    100030: extracted_16
+    100032: extracted_17
+    100034: extracted_18
+    100036: extracted_19
+    100038: extracted_20
+    100040: extracted_21
+    100042: extracted_22
+    100044: extracted_23
+    100046: extracted_24
+    100048: extracted_25
+    100050: group1
+    100052: Iv_stand
+    100054: IV_Stand_Button_01_JNT
+    100056: IV_Stand_Button_02_JNT
+    100058: IV_Stand_Button_03_JNT
+    100060: IV_Stand_Button_04_JNT
+    100062: IV_Stand_Button_05_JNT
+    100064: IV_Stand_Button_06_JNT
+    100066: IV_Stand_Button_07_JNT
+    100068: IV_Stand_Button_08_JNT
+    100070: IV_Stand_Button_09_JNT
+    100072: IV_Stand_Button_10_JNT
+    100074: IV_Stand_Button_11_JNT
+    100076: IV_Stand_Button_12_JNT
+    100078: IV_Stand_Button_13_JNT
+    100080: IV_Stand_Button_14_JNT
+    100082: IV_Stand_Button_15_JNT
+    100084: IV_Stand_Button_16_JNT
+    100086: IV_Stand_Button_17_JNT
+    100088: IV_Stand_Button_18_JNT
+    100090: IV_Stand_Button_19_JNT
+    100092: IV_Stand_Button_20_JNT
+    100094: IV_Stand_Button_21_JNT
+    100096: IV_Stand_Button_22_JNT
+    100098: IV_Stand_Button_23_JNT
+    100100: IV_Stand_JNT
+    100102: //RootNode
+    100104: Root
+    100106: Wire
+    400000: extracted_01
+    400002: extracted_02
+    400004: extracted_03
+    400006: extracted_04
+    400008: extracted_05
+    400010: extracted_06
+    400012: extracted_07
+    400014: extracted_08
+    400016: extracted_09
+    400018: extracted_10
+    400020: extracted_11
+    400022: extracted_12
+    400024: extracted_13
+    400026: extracted_14
+    400028: extracted_15
+    400030: extracted_16
+    400032: extracted_17
+    400034: extracted_18
+    400036: extracted_19
+    400038: extracted_20
+    400040: extracted_21
+    400042: extracted_22
+    400044: extracted_23
+    400046: extracted_24
+    400048: extracted_25
+    400050: group1
+    400052: Iv_stand
+    400054: IV_Stand_Button_01_JNT
+    400056: IV_Stand_Button_02_JNT
+    400058: IV_Stand_Button_03_JNT
+    400060: IV_Stand_Button_04_JNT
+    400062: IV_Stand_Button_05_JNT
+    400064: IV_Stand_Button_06_JNT
+    400066: IV_Stand_Button_07_JNT
+    400068: IV_Stand_Button_08_JNT
+    400070: IV_Stand_Button_09_JNT
+    400072: IV_Stand_Button_10_JNT
+    400074: IV_Stand_Button_11_JNT
+    400076: IV_Stand_Button_12_JNT
+    400078: IV_Stand_Button_13_JNT
+    400080: IV_Stand_Button_14_JNT
+    400082: IV_Stand_Button_15_JNT
+    400084: IV_Stand_Button_16_JNT
+    400086: IV_Stand_Button_17_JNT
+    400088: IV_Stand_Button_18_JNT
+    400090: IV_Stand_Button_19_JNT
+    400092: IV_Stand_Button_20_JNT
+    400094: IV_Stand_Button_21_JNT
+    400096: IV_Stand_Button_22_JNT
+    400098: IV_Stand_Button_23_JNT
+    400100: IV_Stand_JNT
+    400102: //RootNode
+    400104: Root
+    400106: Wire
+    2100000: blue plastic
+    2100002: controls
+    2100004: dark gray
+    2100006: black plastic
+    2100008: ss metal
+    2100010: knurled knob
+    2100012: iv liquid
+    2100014: brown cap
+    2100016: white
+    2100018: iv bag
+    2100020: wheels
+    2300000: extracted_02
+    3300000: extracted_02
+    4300000: Iv_stand
+    4300002: extracted_13
+    4300004: extracted_12
+    4300006: extracted_11
+    4300008: extracted_10
+    4300010: extracted_09
+    4300012: extracted_08
+    4300014: extracted_07
+    4300016: extracted_06
+    4300018: extracted_05
+    4300020: extracted_04
+    4300022: extracted_03
+    4300024: extracted_02
+    4300026: extracted_01
+    4300028: extracted_14
+    4300030: extracted_24
+    4300032: extracted_23
+    4300034: extracted_22
+    4300036: extracted_21
+    4300038: extracted_20
+    4300040: extracted_19
+    4300042: extracted_18
+    4300044: extracted_17
+    4300046: extracted_16
+    4300048: extracted_15
+    4300050: extracted_25
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: extracted_01
+    13700002: extracted_03
+    13700004: extracted_04
+    13700006: extracted_05
+    13700008: extracted_06
+    13700010: extracted_07
+    13700012: extracted_08
+    13700014: extracted_09
+    13700016: extracted_10
+    13700018: extracted_11
+    13700020: extracted_12
+    13700022: extracted_13
+    13700024: extracted_14
+    13700026: extracted_15
+    13700028: extracted_16
+    13700030: extracted_17
+    13700032: extracted_18
+    13700034: extracted_19
+    13700036: extracted_20
+    13700038: extracted_21
+    13700040: extracted_22
+    13700042: extracted_23
+    13700044: extracted_24
+    13700046: extracted_25
+    13700048: Iv_stand
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
