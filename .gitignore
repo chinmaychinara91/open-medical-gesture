@@ -45,3 +45,5 @@ VoiceSDK.Runtime.csproj
 openmg-2.0-metamersive.sln
 .vsconfig
 Temp
+.vs
+obj
