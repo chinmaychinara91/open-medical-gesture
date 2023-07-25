@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 834644963011879018}
-  - component: {fileID: 6288821632653507812}
   m_Layer: 0
   m_Name: L_Finger_Middle_A
   m_TagString: Untagged
@@ -33,32 +32,6 @@ Transform:
   m_Father: {fileID: 727257317661572207}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6288821632653507812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 317958580679407147}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26ef1796ac5a44944bd1f1345855a535, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fingerType: 2
-  bones:
-  - {fileID: 0}
-  - {fileID: 834644963011879018}
-  - {fileID: 2502370928610056620}
-  - {fileID: 2113639986219643663}
-  joints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  deformPosition: 0
-  scaleLastFingerBone: 1
-  modelFingerPointing: {x: 0, y: 1, z: 0}
-  modelPalmFacing: {x: 1, y: 0, z: -0}
 --- !u!1 &1000712761620982057
 GameObject:
   m_ObjectHideFlags: 0
@@ -99,7 +72,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6067488997562019363}
-  - component: {fileID: 8514939701351521753}
   m_Layer: 0
   m_Name: L_Finger_Pinky_A
   m_TagString: Untagged
@@ -123,32 +95,6 @@ Transform:
   m_Father: {fileID: 727257317661572207}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8514939701351521753
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1196103244091323233}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26ef1796ac5a44944bd1f1345855a535, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fingerType: 4
-  bones:
-  - {fileID: 0}
-  - {fileID: 6067488997562019363}
-  - {fileID: 3166767511501445976}
-  - {fileID: 7483821277246768557}
-  joints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  deformPosition: 0
-  scaleLastFingerBone: 1
-  modelFingerPointing: {x: 0, y: 1, z: 0}
-  modelPalmFacing: {x: 1, y: 0, z: -0}
 --- !u!1 &1372464193335919894
 GameObject:
   m_ObjectHideFlags: 0
@@ -190,7 +136,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1752490974187836832}
-  - component: {fileID: 6034470423825459926}
   m_Layer: 0
   m_Name: L_Finger_Thumb_A
   m_TagString: Untagged
@@ -214,32 +159,6 @@ Transform:
   m_Father: {fileID: 727257317661572207}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6034470423825459926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1788880781436216314}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26ef1796ac5a44944bd1f1345855a535, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fingerType: 0
-  bones:
-  - {fileID: 0}
-  - {fileID: 1752490974187836832}
-  - {fileID: 6344115893660941891}
-  - {fileID: 8824048518968778451}
-  joints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  deformPosition: 0
-  scaleLastFingerBone: 1
-  modelFingerPointing: {x: 0, y: 1, z: 0}
-  modelPalmFacing: {x: 1, y: 0, z: -0}
 --- !u!1 &1916784420371974722
 GameObject:
   m_ObjectHideFlags: 0
@@ -307,7 +226,7 @@ Transform:
   m_Children:
   - {fileID: 1413102627982585059}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &2962208958092554770
 SkinnedMeshRenderer:
@@ -449,7 +368,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4485539794617014246}
-  - component: {fileID: 3062989262936795552}
   m_Layer: 0
   m_Name: L_Finger_Ring_A
   m_TagString: Untagged
@@ -473,32 +391,6 @@ Transform:
   m_Father: {fileID: 727257317661572207}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3062989262936795552
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4573479683701368249}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26ef1796ac5a44944bd1f1345855a535, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fingerType: 3
-  bones:
-  - {fileID: 0}
-  - {fileID: 4485539794617014246}
-  - {fileID: 6388311401452046434}
-  - {fileID: 9168445916635760797}
-  joints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  deformPosition: 0
-  scaleLastFingerBone: 1
-  modelFingerPointing: {x: 0, y: 1, z: 0}
-  modelPalmFacing: {x: 1, y: 0, z: -0}
 --- !u!1 &4784198513479599803
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,7 +400,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1257891686069430516}
-  - component: {fileID: 81102433480142764}
   m_Layer: 0
   m_Name: L_Finger_Index_A
   m_TagString: Untagged
@@ -532,32 +423,6 @@ Transform:
   m_Father: {fileID: 727257317661572207}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &81102433480142764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4784198513479599803}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26ef1796ac5a44944bd1f1345855a535, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fingerType: 1
-  bones:
-  - {fileID: 0}
-  - {fileID: 1257891686069430516}
-  - {fileID: 5209202988136632388}
-  - {fileID: 4271147595347030358}
-  joints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  deformPosition: 0
-  scaleLastFingerBone: 1
-  modelFingerPointing: {x: 0, y: 1, z: 0}
-  modelPalmFacing: {x: 1, y: 0, z: -0}
 --- !u!1 &5283010951220854121
 GameObject:
   m_ObjectHideFlags: 0
