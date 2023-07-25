@@ -208,6 +208,13 @@ public class SyringeBehaviour_50ml : SmartObjectBehaviour
             if (pressFlag)
             {
                 StartCoroutine(
+                    LerpRotationHandPose(
+                        handGrabInteractable.GetComponent<HandGrabPose>().HandPose,
+                        handGrabInteractable.GetComponent<HandGrabPose>().HandPose.JointRotations[0],
+                        Quaternion.Euler(syringePressRotationOculus),
+                        0.5f));
+
+                StartCoroutine(
                     LerpPosition(
                         FindChild(transform.gameObject, "Piston").transform,
                         FindChild(transform.gameObject, "Piston").transform.localPosition,
@@ -219,14 +226,6 @@ public class SyringeBehaviour_50ml : SmartObjectBehaviour
                         new Vector3(0, fluidComponent.transform.localScale.y,
                         fluidComponent.transform.localScale.z),
                         0.5f));
-
-                //StartCoroutine(
-                //    LerpRotationHandPose(
-                //        handGrabInteractable.GetComponent<HandGrabPose>().HandPose,
-                //        handGrabInteractable.GetComponent<HandGrabPose>().HandPose.JointRotations[0],
-                //        Quaternion.Euler(syringePressRotationOculus),
-                //        0.5f));
-
             }
         }
     }
@@ -260,18 +259,18 @@ public class SyringeBehaviour_50ml : SmartObjectBehaviour
             if (pressFlag)
             {
                 StartCoroutine(
+                LerpRotationHandPose(
+                    handGrabInteractable.GetComponent<HandGrabPose>().HandPose,
+                    handGrabInteractable.GetComponent<HandGrabPose>().HandPose.JointRotations[0],
+                    Quaternion.Euler(syringeUnpressRotationOculus),
+                    0.5f));
+
+                StartCoroutine(
                     LerpPosition(
                         FindChild(transform.gameObject, "Piston").transform,
                         FindChild(transform.gameObject, "Piston").transform.localPosition,
                         syringeUnpressPosition,
                         0.5f));
-
-                //StartCoroutine(
-                //LerpRotationHandPose(
-                //    handGrabInteractable.GetComponent<HandGrabPose>().HandPose,
-                //    handGrabInteractable.GetComponent<HandGrabPose>().HandPose.JointRotations[0],
-                //    Quaternion.Euler(syringeUnpressRotationOculus),
-                //    0.5f));
             }
         }
     }
@@ -279,7 +278,6 @@ public class SyringeBehaviour_50ml : SmartObjectBehaviour
     public void FixedUpdate()
     {
         base.Update();
-        handGrabInteractable.GetComponent<HandGrabPose>().HandPose.JointRotations[0] = Quaternion.Euler(syringePressRotationOculus);
 
         if (device.m_DeviceName == HandTrackingDeviceController.DeviceName.Quest2)
         {
