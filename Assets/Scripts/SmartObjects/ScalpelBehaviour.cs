@@ -3,7 +3,6 @@
  * Distributed under MIT Licence                         *
  *********************************************************/
 
-using Leap.Unity.Interaction;
 using Oculus.Interaction;
 using UnityEngine;
 using OpenMg.SmartObjects;
@@ -48,15 +47,21 @@ public class ScalpelBehaviour : SmartObjectBehaviour
 
         if (touchFlag && (!rightHand.GetComponent<HasGrabbed>().hasObjectGrabbed))
         {
-            //if(_controller.m_DataProvider.m_DataSource == _controller.sensors[(int)DeviceName.LeapMotion])
-            //{
-
-            //}
-
             // no interaction defined for left hand as of now
             if (interactionBehaviour.closestHoveringHand.ToString().Contains("left"))
             {
-                
+                if (showFakeHand)
+                {
+                    fakeHandLeft.SetActive(true);
+                    leftHandRenderer.material = fadeMatFull;
+                }
+                else
+                {
+                    leftHandRenderer.material = fadeMatPartial;
+                }
+                transform.parent = leftHandAnchor;
+                transform.localPosition = _positionAtLeftHandAnchor;
+                transform.localRotation = Quaternion.Euler(_rotationAtLeftHandAnchor);
             }
 
             // if right hand is the closest hovering hand
@@ -107,9 +112,4 @@ public class ScalpelBehaviour : SmartObjectBehaviour
         touchFlag = true;
         interactionBehaviour.ignoreContact = false;
     }
-
-    //override public void Update()
-    //{
-    //    debugText.text = handGrabR.IsGrabbing.ToString();
-    //}
 }

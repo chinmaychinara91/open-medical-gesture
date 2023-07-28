@@ -4,7 +4,6 @@
  *********************************************************/
 
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Leap.Unity.Interaction;
 using Oculus.Interaction.HandGrab;
@@ -40,6 +39,9 @@ namespace OpenMg.SmartObjects
         public GameObject fakeHand;
 
         [Tooltip("The fake hand holding the smart object")]
+        public GameObject fakeHandLeft;
+
+        [Tooltip("The fake hand holding the smart object")]
         public bool showFakeHand;
 
 
@@ -54,10 +56,10 @@ namespace OpenMg.SmartObjects
         public Renderer rightHandRenderer; // to toggle between right tracked hand and positioned hand render
 
         [HideInInspector]
-        public Transform leftHandAnchor; // about left wrist
+        public Transform leftHandAnchor; // about left wrist (maunually place the smartobject aligned under left wrist and note the transform)
 
         [HideInInspector]
-        public Transform rightHandAnchor; // about right wrist 
+        public Transform rightHandAnchor; // about right wrist (maunually place the smartobject aligned under right wrist and note the transform)
 
         [HideInInspector]
         public bool touchFlag = true; // for picking up an object
