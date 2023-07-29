@@ -66539,23 +66539,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 0
---- !u!1 &1753341805090823
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4109147554073457}
-  - component: {fileID: 111985720574256723}
-  m_Layer: 0
-  m_Name: OculusHand_R
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1757497439172430
 GameObject:
   m_ObjectHideFlags: 0
@@ -66985,21 +66968,6 @@ Transform:
   m_Father: {fileID: 4367012375102032}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4109147554073457
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1753341805090823}
-  m_LocalRotation: {x: -0, y: -0.6643339, z: -0, w: 0.74743605}
-  m_LocalPosition: {x: 0, y: 0, z: 0.23899998}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: -83.262, z: 0}
 --- !u!4 &4167062090586759
 Transform:
   m_ObjectHideFlags: 0
@@ -69047,23 +69015,6 @@ Transform:
   m_Father: {fileID: 5304576469657640020}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!111 &111985720574256723
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1753341805090823}
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Animation: {fileID: 7400002, guid: 168ca3ccfe8938149a1dc4b13a48d337, type: 3}
-  m_Animations:
-  - {fileID: 7400002, guid: 168ca3ccfe8938149a1dc4b13a48d337, type: 3}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_UpdateMode: 0
-  m_CullingType: 0
 --- !u!4 &114012034633480512
 Transform:
   m_ObjectHideFlags: 0
