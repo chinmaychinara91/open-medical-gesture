@@ -1,7 +1,7 @@
 # openmg-2.0-metamersive
 OpenMG 2.0 SDK for Metamersive.
 
-## Leap Motion Interactions
+## Hand Interactions
 <table>
   <tr>
     <td>
