@@ -14,6 +14,7 @@ using Oculus.Interaction.Input;
 
 public class HeartbeatSoundHandler : MonoBehaviour
 {
+    public HandTrackingDeviceController device;
     AudioSource aud;
     public GameObject handFacingGesture;
     public GameObject trackedRightHandModel;
@@ -39,65 +40,76 @@ public class HeartbeatSoundHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if(Input.GetKeyDown(KeyCode.W))
-        //{
-        //    StopAudioOculus();
-        //}
+        if (device.m_DeviceName == HandTrackingDeviceController.DeviceName.Quest2 && Input.GetKeyDown(KeyCode.W))
+        {
+            StopAudioOculus();
+        }
     }
 
     public void PlayAudio()
     {
-        if (handFacingGesture.GetComponent<OmgHandFacingGesture>().Detected() & !touched)
-        {
-            aud.Play();
-            aud.loop = true;
+        if (device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion)
+        { 
+            if (handFacingGesture.GetComponent<OmgHandFacingGesture>().Detected() & !touched)
+            {
+                aud.Play();
+                aud.loop = true;
 
-            rightHand_temp = Instantiate(trackedRightHandModel, trackedRightHandModel.transform.parent);
-            Destroy(rightHand_temp.transform.GetComponent<RiggedHand>());
-            Destroy(rightHand_temp.transform.GetComponent<HandEnableDisable>());
-            Destroy(rightHand_temp.transform.GetComponent<HasGrabbed>());
-            rightHand_temp.SetActive(true);
-            
-            trackedRightHandModel.transform.GetChild(0).GetComponent<Renderer>().material = fadeMatFull;
-            touched = true;
+                rightHand_temp = Instantiate(trackedRightHandModel, trackedRightHandModel.transform.parent);
+                Destroy(rightHand_temp.transform.GetComponent<RiggedHand>());
+                Destroy(rightHand_temp.transform.GetComponent<HandEnableDisable>());
+                Destroy(rightHand_temp.transform.GetComponent<HasGrabbed>());
+                rightHand_temp.SetActive(true);
+
+                trackedRightHandModel.transform.GetChild(0).GetComponent<Renderer>().material = fadeMatFull;
+                touched = true;
+            }
         }
     }
     public void StopAudio()
     {
-        aud.loop = false;
-        aud.Stop();
+        if (device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion)
+        {
+            aud.loop = false;
+            aud.Stop();
 
-        Destroy(rightHand_temp);
-        trackedRightHandModel.transform.GetChild(0).GetComponent<Renderer>().material = opaqueMat;
+            Destroy(rightHand_temp);
+            trackedRightHandModel.transform.GetChild(0).GetComponent<Renderer>().material = opaqueMat;
 
-        touched = false;
+            touched = false;
+        }
     }
 
-    //private void OnCollisionEnter(Collision collision)
-    //{
-    //    if (collision.gameObject.tag == "PlaneOculusRightHand")
-    //    {
-            
-    //        PlayAudioOculus();
-    //    }
-    //}
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (device.m_DeviceName == HandTrackingDeviceController.DeviceName.Quest2)
+        {
+            if (collision.gameObject.tag == "PlaneOculusRightHand")
+            {
+                PlayAudioOculus();
+            }
+        }
+    }
 
-    //private void OnCollisionExit(Collision collision)
-    //{
-    //    StopAudioOculus();
-    //}
+    private void OnCollisionExit(Collision collision)
+    {
+        if (device.m_DeviceName == HandTrackingDeviceController.DeviceName.Quest2)
+        {
+            StopAudioOculus();
+        }
+    }
 
-    //public void PlayAudioOculus()
-    //{
-    //    rigthHandOculus.GetComponent<OVRHand>().enabled = false;
-    //    aud.Play();
-    //    aud.loop = true;
-    //}
+    public void PlayAudioOculus()
+    {
+        rigthHandOculus.GetComponent<OVRHand>().enabled = false;
+        aud.Play();
+        aud.loop = true;
+    }
 
-    //public void StopAudioOculus()
-    //{
-    //    aud.loop = false;
-    //    aud.Stop();
-    //    rigthHandOculus.GetComponent<OVRHand>().enabled = true;
-    //}
+    public void StopAudioOculus()
+    {
+        aud.loop = false;
+        aud.Stop();
+        rigthHandOculus.GetComponent<OVRHand>().enabled = true;
+    }
 }
