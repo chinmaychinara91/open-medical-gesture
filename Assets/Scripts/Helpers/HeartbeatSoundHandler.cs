@@ -48,7 +48,8 @@ public class HeartbeatSoundHandler : MonoBehaviour
 
     public void PlayAudio()
     {
-        if (device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion)
+        if (device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion_FacingCeiling
+            || device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion_HmdMounted)
         { 
             if (handFacingGesture.GetComponent<OmgHandFacingGesture>().Detected() & !touched)
             {
@@ -68,7 +69,8 @@ public class HeartbeatSoundHandler : MonoBehaviour
     }
     public void StopAudio()
     {
-        if (device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion)
+        if (device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion_FacingCeiling
+            || device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion_HmdMounted)
         {
             aud.loop = false;
             aud.Stop();

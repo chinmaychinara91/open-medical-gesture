@@ -14,8 +14,6 @@ using System.Runtime.CompilerServices;
 
 public class SyringeBehaviour_50ml : SmartObjectBehaviour
 {
-    public HandTrackingDeviceController device;
-
     [Header("VARIABLES LOCAL TO THIS SMARTOBJECT", order = 0)]
 
     [Tooltip("Gameobject pointing to the Fluid component")]
@@ -64,7 +62,8 @@ public class SyringeBehaviour_50ml : SmartObjectBehaviour
     {
         base.AttachToHand();
 
-        if (device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion)
+        if (device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion_FacingCeiling
+            || device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion_HmdMounted)
         {
             if (touchFlag && (!rightHand.GetComponent<HasGrabbed>().hasObjectGrabbed))
             {
@@ -127,7 +126,8 @@ public class SyringeBehaviour_50ml : SmartObjectBehaviour
     {
         base.RemoveFromHand();
 
-        if (device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion)
+        if (device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion_FacingCeiling
+            || device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion_HmdMounted)
         {
             if (touchFlag == false)
             {
@@ -168,14 +168,16 @@ public class SyringeBehaviour_50ml : SmartObjectBehaviour
         touchFlag = true;
         pressFlag = false;
 
-        if (device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion)
+        if (device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion_FacingCeiling
+            || device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion_HmdMounted)
             interactionBehaviour.ignoreContact = false;
     }
 
     // local functions
     public void PressSyringe()
     {
-        if (device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion)
+        if (device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion_FacingCeiling
+            || device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion_HmdMounted)
         {
             if (pressFlag)
             {
@@ -232,7 +234,8 @@ public class SyringeBehaviour_50ml : SmartObjectBehaviour
 
     public void UnPressSyringe()
     {
-        if (device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion)
+        if (device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion_FacingCeiling
+            || device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion_HmdMounted)
         {
             if (pressFlag)
             {

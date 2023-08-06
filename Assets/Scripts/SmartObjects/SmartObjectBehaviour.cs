@@ -79,6 +79,8 @@ namespace OpenMg.SmartObjects
         //[HideInInspector]
         public HandGrabInteractor handGrabR; // get oculus right hand grab status
 
+        public HandTrackingDeviceController device;
+
         public virtual void Awake()
         {
             origPos = new Vector3(transform.position.x, transform.position.y, transform.position.z);
@@ -87,6 +89,16 @@ namespace OpenMg.SmartObjects
 
         public virtual void Start()
         {
+            if(device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion_FacingCeiling)
+            {
+                leftHand = FindChild(device.sensors[(int)HandTrackingDeviceController.DeviceName.LeapMotion_FacingCeiling].transform.parent.gameObject, "Hand_L").transform;
+                rightHand = FindChild(device.sensors[(int)HandTrackingDeviceController.DeviceName.LeapMotion_FacingCeiling].transform.parent.gameObject, "Hand_R").transform;
+            }
+            else if (device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion_HmdMounted)
+            {
+                leftHand = FindChild(device.sensors[(int)HandTrackingDeviceController.DeviceName.LeapMotion_HmdMounted].transform.parent.gameObject, "Hand_L").transform;
+                rightHand = FindChild(device.sensors[(int)HandTrackingDeviceController.DeviceName.LeapMotion_HmdMounted].transform.parent.gameObject, "Hand_R").transform;
+            }
             leftHandRenderer = FindChild(leftHand.gameObject, "LeftHandRenderer").GetComponent<Renderer>();
             rightHandRenderer = FindChild(rightHand.gameObject, "RightHandRenderer").GetComponent<Renderer>();
             leftHandAnchor = FindChild(leftHand.gameObject, "L_Wrist").transform;

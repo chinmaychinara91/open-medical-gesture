@@ -9,8 +9,6 @@ using OpenMg.SmartObjects;
 
 public class ScalpelBehaviour : SmartObjectBehaviour
 {
-    public HandTrackingDeviceController _controller;
-
     [Header("VARIABLES LOCAL TO THIS SMARTOBJECT", order = 0)]
 
     [Header("Position/Rotation of SmartObject about Anchor", order = 1)]

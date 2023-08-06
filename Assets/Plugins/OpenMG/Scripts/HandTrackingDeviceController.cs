@@ -11,11 +11,12 @@ public class HandTrackingDeviceController : MonoBehaviour
 {
     public enum DeviceName 
     {
-        LeapMotion,
+        LeapMotion_FacingCeiling,
+        LeapMotion_HmdMounted,
         Quest2 
     }
 
-    public DeviceName m_DeviceName = DeviceName.LeapMotion;
+    public DeviceName m_DeviceName = DeviceName.LeapMotion_FacingCeiling;
     public bool isUsingRightHand = true;
     public OpenMGHandTrackingProvider m_DataProvider;
     public GameObject[] sensors;
@@ -30,18 +31,28 @@ public class HandTrackingDeviceController : MonoBehaviour
     {        
         switch (m_DeviceName)
         {
-            case DeviceName.LeapMotion:
+            case DeviceName.LeapMotion_FacingCeiling:
                 {
                     m_DataProvider = new LeapMotionHandTrackingProvider();
-                    m_DataProvider.m_DataSource = sensors[(int)DeviceName.LeapMotion];
+                    m_DataProvider.m_DataSource = sensors[(int)DeviceName.LeapMotion_FacingCeiling];
                     sensors[(int)DeviceName.Quest2].SetActive(false);
+                    sensors[(int)DeviceName.LeapMotion_HmdMounted].transform.parent.gameObject.SetActive(false);
+                    break;
+                }
+            case DeviceName.LeapMotion_HmdMounted:
+                {
+                    m_DataProvider = new LeapMotionHandTrackingProvider();
+                    m_DataProvider.m_DataSource = sensors[(int)DeviceName.LeapMotion_HmdMounted];
+                    sensors[(int)DeviceName.Quest2].SetActive(false);
+                    sensors[(int)DeviceName.LeapMotion_FacingCeiling].transform.parent.gameObject.SetActive(false);
                     break;
                 }
             case DeviceName.Quest2:
                 {
                     m_DataProvider = new Quest2HandTrackingProvider();
                     m_DataProvider.m_DataSource = sensors[(int)DeviceName.Quest2];
-                    sensors[(int)DeviceName.LeapMotion].transform.parent.gameObject.SetActive(false);
+                    sensors[(int)DeviceName.LeapMotion_FacingCeiling].transform.parent.gameObject.SetActive(false);
+                    sensors[(int)DeviceName.LeapMotion_HmdMounted].transform.parent.gameObject.SetActive(false);
                     //display_joints = true;
                     break;
                 }
@@ -89,17 +100,31 @@ public class HandTrackingDeviceController : MonoBehaviour
         m_DataProvider.Close();
         switch (m_DeviceName)
         {
-            case DeviceName.LeapMotion:
-                m_DataProvider = new LeapMotionHandTrackingProvider();
-                m_DataProvider.m_DataSource = sensors[(int)DeviceName.LeapMotion];
-                sensors[(int)DeviceName.Quest2].SetActive(false);
-                break;
+            case DeviceName.LeapMotion_FacingCeiling:
+                {
+                    m_DataProvider = new LeapMotionHandTrackingProvider();
+                    m_DataProvider.m_DataSource = sensors[(int)DeviceName.LeapMotion_FacingCeiling];
+                    sensors[(int)DeviceName.Quest2].SetActive(false);
+                    sensors[(int)DeviceName.LeapMotion_HmdMounted].transform.parent.gameObject.SetActive(false);
+                    break;
+                }
+            case DeviceName.LeapMotion_HmdMounted:
+                {
+                    m_DataProvider = new LeapMotionHandTrackingProvider();
+                    m_DataProvider.m_DataSource = sensors[(int)DeviceName.LeapMotion_HmdMounted];
+                    sensors[(int)DeviceName.Quest2].SetActive(false);
+                    sensors[(int)DeviceName.LeapMotion_FacingCeiling].transform.parent.gameObject.SetActive(false);
+                    break;
+                }
             case DeviceName.Quest2:
-                m_DataProvider = new Quest2HandTrackingProvider();
-                m_DataProvider.m_DataSource = sensors[(int)DeviceName.Quest2];
-                sensors[(int)DeviceName.LeapMotion].transform.parent.gameObject.SetActive(false);
-                //display_joints = true;
-                break;  
+                {
+                    m_DataProvider = new Quest2HandTrackingProvider();
+                    m_DataProvider.m_DataSource = sensors[(int)DeviceName.Quest2];
+                    sensors[(int)DeviceName.LeapMotion_FacingCeiling].transform.parent.gameObject.SetActive(false);
+                    sensors[(int)DeviceName.LeapMotion_HmdMounted].transform.parent.gameObject.SetActive(false);
+                    //display_joints = true;
+                    break;
+                }
         }
         for (int i = 0; i < joints.Length; i++)
         {
