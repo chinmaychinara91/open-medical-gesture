@@ -6,17 +6,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Leap.Unity.Interaction;
 using Leap.Unity;
-using Leap;
-using Oculus.Interaction.Input.Filter;
-using Oculus.Interaction.Input;
 
 public class HeartbeatSoundHandler : MonoBehaviour
 {
     public HandTrackingDeviceController device;
     AudioSource aud;
     public GameObject handFacingGesture;
+    public GameObject trackedLeftHandModel;
     public GameObject trackedRightHandModel;
     public Material opaqueMat;
     public Material fadeMat;
@@ -35,6 +32,16 @@ public class HeartbeatSoundHandler : MonoBehaviour
     {
         aud = GetComponent<AudioSource>();
         //aud.time = aud.clip.length * .8f;
+        if (device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion_FacingCeiling)
+        {
+            trackedLeftHandModel = FindChild(device.sensors[(int)HandTrackingDeviceController.DeviceName.LeapMotion_FacingCeiling].transform.parent.gameObject, "Hand_L");
+            trackedRightHandModel = FindChild(device.sensors[(int)HandTrackingDeviceController.DeviceName.LeapMotion_FacingCeiling].transform.parent.gameObject, "Hand_R");
+        }
+        else if (device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion_HmdMounted)
+        {
+            trackedLeftHandModel = FindChild(device.sensors[(int)HandTrackingDeviceController.DeviceName.LeapMotion_HmdMounted].transform.parent.gameObject, "Hand_L");
+            trackedRightHandModel = FindChild(device.sensors[(int)HandTrackingDeviceController.DeviceName.LeapMotion_HmdMounted].transform.parent.gameObject, "Hand_R");
+        }
     }
 
     // Update is called once per frame
@@ -113,5 +120,21 @@ public class HeartbeatSoundHandler : MonoBehaviour
         aud.loop = false;
         aud.Stop();
         rigthHandOculus.GetComponent<OVRHand>().enabled = true;
+    }
+
+    // find child of a gameobject with certain name
+    public GameObject FindChild(GameObject parent, string childName)
+    {
+        Transform[] everyChildren = parent.GetComponentsInChildren<Transform>(true);
+
+        foreach (var child in everyChildren)
+        {
+            if (child.name == childName)
+            {
+                return child.gameObject;
+            }
+        }
+
+        return null;
     }
 }
