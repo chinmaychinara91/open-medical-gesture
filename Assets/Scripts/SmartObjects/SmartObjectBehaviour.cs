@@ -7,6 +7,7 @@ using System.Collections;
 using UnityEngine;
 using Leap.Unity.Interaction;
 using Oculus.Interaction.HandGrab;
+using Leap.Unity;
 
 namespace OpenMg.SmartObjects
 {

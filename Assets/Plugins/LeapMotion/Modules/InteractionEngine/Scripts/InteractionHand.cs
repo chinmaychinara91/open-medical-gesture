@@ -276,25 +276,25 @@ namespace Leap.Unity.Interaction
         /// </summary>
         public override Vector3 position
         {
-            //get { return _handData.PalmPosition.ToVector3(); }
-            get
-            {
-                if (device.m_DataProvider.GetNumOfHands() == 2)
-                {
-                    for (int i = 0; i < 2; i++)
-                    {
-                        if (device.m_DataProvider.hands[i].isLeft)
-                        {
-                            return device.m_DataProvider.GetPalmPosition(i);
-                        }
-                        if (device.m_DataProvider.hands[i].isRight)
-                        {
-                            return device.m_DataProvider.GetPalmPosition(i);
-                        }
-                    }
-                }
-                return device.m_DataProvider.GetPalmPosition(0);
-            }
+            get { return _handData.PalmPosition.ToVector3(); }
+            //get
+            //{
+            //    if (device.m_DataProvider.GetNumOfHands() == 2)
+            //    {
+            //        for (int i = 0; i < 2; i++)
+            //        {
+            //            if (device.m_DataProvider.hands[i].isLeft)
+            //            {
+            //                return device.m_DataProvider.GetPalmPosition(i);
+            //            }
+            //            if (device.m_DataProvider.hands[i].isRight)
+            //            {
+            //                return device.m_DataProvider.GetPalmPosition(i);
+            //            }
+            //        }
+            //    }
+            //    return device.m_DataProvider.GetPalmPosition(0);
+            //}
         }
 
         /// <summary>
@@ -302,25 +302,25 @@ namespace Leap.Unity.Interaction
         /// </summary>
         public override Quaternion rotation
         {
-            //get { return _handData.Rotation.ToQuaternion(); }
-            get
-            {
-                if (device.m_DataProvider.GetNumOfHands() == 2)
-                {
-                    for (int i = 0; i < 2; i++)
-                    {
-                        if (device.m_DataProvider.hands[i].isLeft)
-                        {
-                            return device.m_DataProvider.GetHandRotation(i);
-                        }
-                        if (device.m_DataProvider.hands[i].isRight)
-                        {
-                            return device.m_DataProvider.GetHandRotation(i);
-                        }
-                    }
-                }
-                return device.m_DataProvider.GetHandRotation(0);
-            }
+            get { return _handData.Rotation.ToQuaternion(); }
+            //get
+            //{
+            //    if (device.m_DataProvider.GetNumOfHands() == 2)
+            //    {
+            //        for (int i = 0; i < 2; i++)
+            //        {
+            //            if (device.m_DataProvider.hands[i].isLeft)
+            //            {
+            //                return device.m_DataProvider.GetHandRotation(i);
+            //            }
+            //            if (device.m_DataProvider.hands[i].isRight)
+            //            {
+            //                return device.m_DataProvider.GetHandRotation(i);
+            //            }
+            //        }
+            //    }
+            //    return device.m_DataProvider.GetHandRotation(0);
+            //}
         }
 
         /// <summary>
@@ -328,32 +328,32 @@ namespace Leap.Unity.Interaction
         /// </summary>
         public override Vector3 velocity
         {
-            //get { return isTracked ? leapHand.PalmVelocity.ToVector3() : Vector3.zero; }
-            get
-            {
-                if (isTracked)
-                {
-                    if (device.m_DataProvider.GetNumOfHands() == 2)
-                    {
-                        for (int i = 0; i < 2; i++)
-                        {
-                            if (device.m_DataProvider.hands[i].isLeft)
-                            {
-                                return device.m_DataProvider.GetPalmVelocity(i);
-                            }
-                            if (device.m_DataProvider.hands[i].isRight)
-                            {
-                                return device.m_DataProvider.GetPalmVelocity(i);
-                            }
-                        }
-                    }
-                    return device.m_DataProvider.GetPalmVelocity(0);
-                }
-                else
-                {
-                    return Vector3.zero;
-                }
-            }
+            get { return isTracked ? leapHand.PalmVelocity.ToVector3() : Vector3.zero; }
+            //get
+            //{
+            //    if (isTracked)
+            //    {
+            //        if (device.m_DataProvider.GetNumOfHands() == 2)
+            //        {
+            //            for (int i = 0; i < 2; i++)
+            //            {
+            //                if (device.m_DataProvider.hands[i].isLeft)
+            //                {
+            //                    return device.m_DataProvider.GetPalmVelocity(i);
+            //                }
+            //                if (device.m_DataProvider.hands[i].isRight)
+            //                {
+            //                    return device.m_DataProvider.GetPalmVelocity(i);
+            //                }
+            //            }
+            //        }
+            //        return device.m_DataProvider.GetPalmVelocity(0);
+            //    }
+            //    else
+            //    {
+            //        return Vector3.zero;
+            //    }
+            //}
         }
 
         /// <summary>
