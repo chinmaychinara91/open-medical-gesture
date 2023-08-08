@@ -100,11 +100,14 @@ namespace OpenMg.SmartObjects
                 leftHand = FindChild(device.sensors[(int)HandTrackingDeviceController.DeviceName.LeapMotion_HmdMounted].transform.parent.gameObject, "Hand_L").transform;
                 rightHand = FindChild(device.sensors[(int)HandTrackingDeviceController.DeviceName.LeapMotion_HmdMounted].transform.parent.gameObject, "Hand_R").transform;
             }
-            leftHandRenderer = FindChild(leftHand.gameObject, "LeftHandRenderer").GetComponent<Renderer>();
-            rightHandRenderer = FindChild(rightHand.gameObject, "RightHandRenderer").GetComponent<Renderer>();
-            leftHandAnchor = FindChild(leftHand.gameObject, "L_Wrist").transform;
-            rightHandAnchor = FindChild(rightHand.gameObject, "R_Wrist").transform;
-            interactionBehaviour = GetComponent<InteractionBehaviour>();
+            if (device.m_DeviceName != HandTrackingDeviceController.DeviceName.Quest2)
+            {
+                leftHandRenderer = FindChild(leftHand.gameObject, "LeftHandRenderer").GetComponent<Renderer>();
+                rightHandRenderer = FindChild(rightHand.gameObject, "RightHandRenderer").GetComponent<Renderer>();
+                leftHandAnchor = FindChild(leftHand.gameObject, "L_Wrist").transform;
+                rightHandAnchor = FindChild(rightHand.gameObject, "R_Wrist").transform;
+                interactionBehaviour = GetComponent<InteractionBehaviour>();
+            }
             rigidBody = GetComponent<Rigidbody>();
         }
 

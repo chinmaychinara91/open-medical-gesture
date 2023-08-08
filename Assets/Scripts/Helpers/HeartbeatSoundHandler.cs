@@ -7,24 +7,34 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Leap.Unity;
+using Oculus.Interaction.Input;
 
 public class HeartbeatSoundHandler : MonoBehaviour
 {
     public HandTrackingDeviceController device;
     AudioSource aud;
     public GameObject handFacingGesture;
+
     public GameObject trackedLeftHandModel;
     public GameObject trackedRightHandModel;
+    public GameObject trackedLeftHandModelOculus;
+    public GameObject trackedRightHandModelOculus;
+
     public Material opaqueMat;
     public Material fadeMat;
     public Material fadeMatFull;
-    bool touched = false;
+    public Material opaqueMatOculus;
+    public Material fadeMatOculus;
+    public Material fadeMatFullOculus;
 
-    public GameObject rigthHandOculus;
+    bool touched = false;
 
     // for temporary instantiation of the hand
     GameObject rightHand_temp; 
     GameObject leftHand_temp;
+
+    GameObject rightHandOculus_temp;
+    GameObject leftHandOculus_temp;
 
 
     // Start is called before the first frame update
@@ -110,16 +120,24 @@ public class HeartbeatSoundHandler : MonoBehaviour
 
     public void PlayAudioOculus()
     {
-        rigthHandOculus.GetComponent<OVRHand>().enabled = false;
         aud.Play();
         aud.loop = true;
+
+        rightHandOculus_temp = Instantiate(trackedRightHandModelOculus, trackedRightHandModelOculus.transform.parent);
+        Destroy(rightHandOculus_temp.transform.GetComponent<SyntheticHand>());
+        Destroy(FindChild(rightHandOculus_temp, "Cube"));
+        rightHandOculus_temp.SetActive(true);
+
+        FindChild(trackedRightHandModelOculus, "r_handMeshNode").transform.GetComponent<Renderer>().material = fadeMatFullOculus;
     }
 
     public void StopAudioOculus()
     {
         aud.loop = false;
         aud.Stop();
-        rigthHandOculus.GetComponent<OVRHand>().enabled = true;
+
+        Destroy(rightHandOculus_temp);
+        FindChild(trackedRightHandModelOculus, "r_handMeshNode").transform.GetComponent<Renderer>().material = opaqueMatOculus;
     }
 
     // find child of a gameobject with certain name

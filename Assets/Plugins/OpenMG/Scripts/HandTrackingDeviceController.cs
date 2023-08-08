@@ -51,8 +51,8 @@ public class HandTrackingDeviceController : MonoBehaviour
                 {
                     m_DataProvider = new Quest2HandTrackingProvider();
                     m_DataProvider.m_DataSource = sensors[(int)DeviceName.Quest2];
-                    sensors[(int)DeviceName.LeapMotion_FacingCeiling].transform.parent.gameObject.SetActive(false);
-                    sensors[(int)DeviceName.LeapMotion_HmdMounted].transform.parent.gameObject.SetActive(false);
+                    sensors[(int)DeviceName.LeapMotion_FacingCeiling].transform.parent.parent.gameObject.SetActive(false);
+                    //sensors[(int)DeviceName.LeapMotion_HmdMounted].transform.parent.gameObject.SetActive(false);
                     //display_joints = true;
                     break;
                 }
@@ -120,8 +120,8 @@ public class HandTrackingDeviceController : MonoBehaviour
                 {
                     m_DataProvider = new Quest2HandTrackingProvider();
                     m_DataProvider.m_DataSource = sensors[(int)DeviceName.Quest2];
-                    sensors[(int)DeviceName.LeapMotion_FacingCeiling].transform.parent.gameObject.SetActive(false);
-                    sensors[(int)DeviceName.LeapMotion_HmdMounted].transform.parent.gameObject.SetActive(false);
+                    sensors[(int)DeviceName.LeapMotion_FacingCeiling].transform.parent.parent.gameObject.SetActive(false);
+                    //sensors[(int)DeviceName.LeapMotion_HmdMounted].transform.parent.gameObject.SetActive(false);
                     //display_joints = true;
                     break;
                 }
