@@ -77,7 +77,7 @@ namespace OpenMg.SmartObjects
         [HideInInspector]
         public Quaternion origRot; // capture start rotation of object (may come to use later)
 
-        //[HideInInspector]
+        [HideInInspector]
         public HandGrabInteractor handGrabR; // get oculus right hand grab status
 
         public HandTrackingDeviceController device;
