@@ -35721,7 +35721,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dd80cce060cac84196aad564598c039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_DeviceName: 2
+  m_DeviceName: 0
   isUsingRightHand: 1
   m_DataProvider: {fileID: 0}
   sensors:
