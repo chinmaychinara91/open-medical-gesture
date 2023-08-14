@@ -6,14 +6,14 @@ OpenMG 2.0 SDK for Metamersive.
   <tr>
     <td>
       <p align="center">
-        <img src="Documentation/images/autoinjector_1.png" width = 400px>
+        <img src="Documentation/images/autoinjector_1.png" width = 360px>
         <br/>
         Autoinjector pick
       </p>
     </td>
     <td>
       <p align="center">
-        <img src="Documentation/images/autoinjector_2.png" width = 400px>
+        <img src="Documentation/images/autoinjector_2.png" width = 360px>
         <br/>
         Autoinjector actuate
       </p>
@@ -23,14 +23,14 @@ OpenMG 2.0 SDK for Metamersive.
   <tr>
     <td>
       <p align="center">
-        <img src="Documentation/images/bandage_scissor_1_labelled.png" width = 400px>
+        <img src="Documentation/images/bandage_scissor_1_labelled.png" width = 360px>
         <br/>
         Bandage Scissor close
       </p>
     </td>
     <td>
       <p align="center">
-        <img src="Documentation/images/bandage_scissor_2.png" width = 400px>
+        <img src="Documentation/images/bandage_scissor_2.png" width = 360px>
         <br/>
         Bandage Scissor open
       </p>
@@ -40,14 +40,14 @@ OpenMG 2.0 SDK for Metamersive.
   <tr>
     <td>
       <p align="center">
-        <img src="Documentation/images/bandageroll_1.png" width = 400px>
+        <img src="Documentation/images/bandageroll_1.png" width = 360px>
         <br/>
         Bandage Roll pick
       </p>
     </td>
     <td>
       <p align="center">
-        <img src="Documentation/images/bandageroll_2.png" width = 400px>
+        <img src="Documentation/images/bandageroll_2.png" width = 360px>
         <br/>
         Bandage Roll open
       </p>
@@ -57,14 +57,14 @@ OpenMG 2.0 SDK for Metamersive.
   <tr>
     <td>
       <p align="center">
-        <img src="Documentation/images/needle_forceps_1 labelled.png" width = 400px>
+        <img src="Documentation/images/needle_forceps_1 labelled.png" width = 360px>
         <br/>
         Needle Forceps close
       </p>
     </td>
     <td>
       <p align="center">
-        <img src="Documentation/images/needle_forceps_2.png" width = 400px>
+        <img src="Documentation/images/needle_forceps_2.png" width = 360px>
         <br/>
         Needle Forceps open
       </p>
@@ -74,14 +74,14 @@ OpenMG 2.0 SDK for Metamersive.
   <tr>
     <td>
       <p align="center">
-        <img src="Documentation/images/scalpel_1.png" width = 400px>
+        <img src="Documentation/images/scalpel_1.png" width = 360px>
         <br/>
         Scalpel pick
       </p>
     </td>
     <td>
       <p align="center">
-        <img src="Documentation/images/scalpel_2.png" width = 400px>
+        <img src="Documentation/images/scalpel_2.png" width = 360px>
         <br/>
         Scalpel use
       </p>
@@ -91,14 +91,14 @@ OpenMG 2.0 SDK for Metamersive.
   <tr>
     <td>
       <p align="center">
-        <img src="Documentation/images/scissor_close_labelled.png" width = 400px>
+        <img src="Documentation/images/scissor_close_labelled.png" width = 360px>
         <br/>
         Scissor close
       </p>
     </td>
     <td>
       <p align="center">
-        <img src="Documentation/images/scissor_open.png" width = 400px>
+        <img src="Documentation/images/scissor_open.png" width = 360px>
         <br/>
         Scissor open
       </p>
@@ -125,14 +125,14 @@ OpenMG 2.0 SDK for Metamersive.
   <tr>
     <td>
       <p align="center">
-        <img src="Documentation/images/trocar_1.png" width = 400px>
+        <img src="Documentation/images/trocar_1.png" width = 360px>
         <br/>
         Trocar pick
       </p>
     </td>
     <td>
       <p align="center">
-        <img src="Documentation/images/trocar_2.png" width = 400px>
+        <img src="Documentation/images/trocar_2.png" width = 360px>
         <br/>
         Trocar use
       </p>
@@ -142,14 +142,14 @@ OpenMG 2.0 SDK for Metamersive.
   <tr>
     <td>
       <p align="center">
-        <img src="Documentation/images/drawer_closed.png" width = 400px>
+        <img src="Documentation/images/drawer_closed.png" width = 360px>
         <br/>
         Drawer close
       </p>
     </td>
     <td>
       <p align="center">
-        <img src="Documentation/images/drawer_open.png" width = 400px>
+        <img src="Documentation/images/drawer_open.png" width = 360px>
         <br/>
         Drawer open
       </p>
