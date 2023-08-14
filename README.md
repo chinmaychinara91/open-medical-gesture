@@ -108,14 +108,14 @@ OpenMG 2.0 SDK for Metamersive.
   <tr>
     <td>
       <p align="center">
-        <img src="Documentation/images/syringe_unpress_labelled.png" width = 380px>
+        <img src="Documentation/images/syringe_unpress_labelled.png" width = 360px>
         <br/>
         Syringe
       </p>
     </td>
     <td>
       <p align="center">
-        <img src="Documentation/gifs/smooth_syringe_press.gif" width = 380px>
+        <img src="Documentation/gifs/smooth_syringe_press.gif" width = 360px>
         <br/>
         Syringe press/release
       </p>
