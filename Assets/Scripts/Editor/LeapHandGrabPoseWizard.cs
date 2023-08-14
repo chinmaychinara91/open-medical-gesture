@@ -242,7 +242,7 @@ public class LeapHandGrabPoseWizard : EditorWindow
             Directory.CreateDirectory(parentDir);
         }
         string name = _dummyHand.transform.parent != null ? _dummyHand.transform.parent.name : "Auto";
-        AssetDatabase.CreateAsset(_posesCollection, Path.Combine(parentDir, $"{name}_LeapHandGrabCollection.asset"));
+        AssetDatabase.CreateAsset(_posesCollection, Path.Combine(parentDir, $"{name}_LeapHandGrabData.asset"));
         AssetDatabase.SaveAssets();
     }
 
