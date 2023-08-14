@@ -48,18 +48,7 @@ public class ScalpelBehaviour : SmartObjectBehaviour
             // no interaction defined for left hand as of now
             if (interactionBehaviour.closestHoveringHand.ToString().Contains("left"))
             {
-                if (showFakeHand)
-                {
-                    fakeHandLeft.SetActive(true);
-                    leftHandRenderer.material = fadeMatFull;
-                }
-                else
-                {
-                    leftHandRenderer.material = fadeMatPartial;
-                }
-                transform.parent = leftHandAnchor;
-                transform.localPosition = _positionAtLeftHandAnchor;
-                transform.localRotation = Quaternion.Euler(_rotationAtLeftHandAnchor);
+;
             }
 
             // if right hand is the closest hovering hand
