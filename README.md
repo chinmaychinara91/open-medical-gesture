@@ -6,9 +6,9 @@ OpenMG 2.0 SDK for Metamersive.
   <tr>
     <td>
       <p align="center">
-        <img src="Documentation/images/autoinjector_1.png" width = 360px>
+        <img src="Documentation/gifs/auscultation.gif" width = 360px>
         <br/>
-        Autoinjector pick
+        Auscultation
       </p>
     </td>
     <td>
