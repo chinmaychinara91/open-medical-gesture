@@ -4845,8 +4845,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4838959a03c32443abc97a2f4a0f22d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftHand: {fileID: 4451764485357024}
-  rightHand: {fileID: 4706276869002674}
+  leftHand: {fileID: 0}
+  rightHand: {fileID: 0}
   opaqueMat: {fileID: 2100000, guid: 41b9c1738c9020a4c95b413715468980, type: 2}
   fadeMatPartial: {fileID: 2100000, guid: 23318623a8cd0be448a7b3224c439e93, type: 2}
   fadeMatFull: {fileID: 2100000, guid: 4602c3c0306778a469cea009a5792b26, type: 2}
@@ -5283,8 +5283,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e01db7fb74416447af9f482362bc1be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftHand: {fileID: 4451764485357024}
-  rightHand: {fileID: 4706276869002674}
+  leftHand: {fileID: 0}
+  rightHand: {fileID: 0}
   opaqueMat: {fileID: 2100000, guid: 41b9c1738c9020a4c95b413715468980, type: 2}
   fadeMatPartial: {fileID: 2100000, guid: 23318623a8cd0be448a7b3224c439e93, type: 2}
   fadeMatFull: {fileID: 2100000, guid: 4602c3c0306778a469cea009a5792b26, type: 2}
@@ -10206,8 +10206,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78496aef2f5e9744ca6e9a561dadad10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftHand: {fileID: 4451764485357024}
-  rightHand: {fileID: 4706276869002674}
+  leftHand: {fileID: 0}
+  rightHand: {fileID: 0}
   opaqueMat: {fileID: 2100000, guid: 41b9c1738c9020a4c95b413715468980, type: 2}
   fadeMatPartial: {fileID: 2100000, guid: 23318623a8cd0be448a7b3224c439e93, type: 2}
   fadeMatFull: {fileID: 2100000, guid: 4602c3c0306778a469cea009a5792b26, type: 2}
@@ -11138,8 +11138,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59ec9f495171bf94dbacc4ab70c13962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftHand: {fileID: 4451764485357024}
-  rightHand: {fileID: 4706276869002674}
+  leftHand: {fileID: 0}
+  rightHand: {fileID: 0}
   opaqueMat: {fileID: 2100000, guid: 41b9c1738c9020a4c95b413715468980, type: 2}
   fadeMatPartial: {fileID: 2100000, guid: 23318623a8cd0be448a7b3224c439e93, type: 2}
   fadeMatFull: {fileID: 2100000, guid: 4602c3c0306778a469cea009a5792b26, type: 2}
@@ -17610,8 +17610,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ba531bc52da9f24485d16f5c417398f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftHand: {fileID: 4451764485357024}
-  rightHand: {fileID: 4706276869002674}
+  leftHand: {fileID: 0}
+  rightHand: {fileID: 0}
   opaqueMat: {fileID: 2100000, guid: 41b9c1738c9020a4c95b413715468980, type: 2}
   fadeMatPartial: {fileID: 2100000, guid: 23318623a8cd0be448a7b3224c439e93, type: 2}
   fadeMatFull: {fileID: 2100000, guid: 4602c3c0306778a469cea009a5792b26, type: 2}
@@ -18295,8 +18295,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7756923f87da5774582aa05fe3229d09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftHand: {fileID: 4451764485357024}
-  rightHand: {fileID: 4706276869002674}
+  leftHand: {fileID: 0}
+  rightHand: {fileID: 0}
   opaqueMat: {fileID: 2100000, guid: 41b9c1738c9020a4c95b413715468980, type: 2}
   fadeMatPartial: {fileID: 2100000, guid: 23318623a8cd0be448a7b3224c439e93, type: 2}
   fadeMatFull: {fileID: 2100000, guid: 4602c3c0306778a469cea009a5792b26, type: 2}
@@ -20376,8 +20376,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59ec9f495171bf94dbacc4ab70c13962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftHand: {fileID: 4451764485357024}
-  rightHand: {fileID: 4706276869002674}
+  leftHand: {fileID: 0}
+  rightHand: {fileID: 0}
   opaqueMat: {fileID: 2100000, guid: 41b9c1738c9020a4c95b413715468980, type: 2}
   fadeMatPartial: {fileID: 2100000, guid: 23318623a8cd0be448a7b3224c439e93, type: 2}
   fadeMatFull: {fileID: 2100000, guid: 4602c3c0306778a469cea009a5792b26, type: 2}
@@ -20641,8 +20641,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7756923f87da5774582aa05fe3229d09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftHand: {fileID: 4451764485357024}
-  rightHand: {fileID: 4706276869002674}
+  leftHand: {fileID: 0}
+  rightHand: {fileID: 0}
   opaqueMat: {fileID: 2100000, guid: 41b9c1738c9020a4c95b413715468980, type: 2}
   fadeMatPartial: {fileID: 2100000, guid: 23318623a8cd0be448a7b3224c439e93, type: 2}
   fadeMatFull: {fileID: 2100000, guid: 4602c3c0306778a469cea009a5792b26, type: 2}
@@ -22032,8 +22032,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e01db7fb74416447af9f482362bc1be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftHand: {fileID: 4451764485357024}
-  rightHand: {fileID: 4706276869002674}
+  leftHand: {fileID: 0}
+  rightHand: {fileID: 0}
   opaqueMat: {fileID: 2100000, guid: 41b9c1738c9020a4c95b413715468980, type: 2}
   fadeMatPartial: {fileID: 2100000, guid: 23318623a8cd0be448a7b3224c439e93, type: 2}
   fadeMatFull: {fileID: 2100000, guid: 4602c3c0306778a469cea009a5792b26, type: 2}
@@ -33190,8 +33190,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78496aef2f5e9744ca6e9a561dadad10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftHand: {fileID: 4451764485357024}
-  rightHand: {fileID: 4706276869002674}
+  leftHand: {fileID: 0}
+  rightHand: {fileID: 0}
   opaqueMat: {fileID: 2100000, guid: 41b9c1738c9020a4c95b413715468980, type: 2}
   fadeMatPartial: {fileID: 2100000, guid: 23318623a8cd0be448a7b3224c439e93, type: 2}
   fadeMatFull: {fileID: 2100000, guid: 4602c3c0306778a469cea009a5792b26, type: 2}
@@ -45140,8 +45140,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ba531bc52da9f24485d16f5c417398f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftHand: {fileID: 4451764485357024}
-  rightHand: {fileID: 4706276869002674}
+  leftHand: {fileID: 0}
+  rightHand: {fileID: 0}
   opaqueMat: {fileID: 2100000, guid: 41b9c1738c9020a4c95b413715468980, type: 2}
   fadeMatPartial: {fileID: 2100000, guid: 23318623a8cd0be448a7b3224c439e93, type: 2}
   fadeMatFull: {fileID: 2100000, guid: 4602c3c0306778a469cea009a5792b26, type: 2}
@@ -46139,8 +46139,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e01db7fb74416447af9f482362bc1be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftHand: {fileID: 4451764485357024}
-  rightHand: {fileID: 4706276869002674}
+  leftHand: {fileID: 0}
+  rightHand: {fileID: 0}
   opaqueMat: {fileID: 2100000, guid: 41b9c1738c9020a4c95b413715468980, type: 2}
   fadeMatPartial: {fileID: 2100000, guid: 23318623a8cd0be448a7b3224c439e93, type: 2}
   fadeMatFull: {fileID: 2100000, guid: 4602c3c0306778a469cea009a5792b26, type: 2}
@@ -58004,8 +58004,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4838959a03c32443abc97a2f4a0f22d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftHand: {fileID: 4451764485357024}
-  rightHand: {fileID: 4706276869002674}
+  leftHand: {fileID: 0}
+  rightHand: {fileID: 0}
   opaqueMat: {fileID: 2100000, guid: 41b9c1738c9020a4c95b413715468980, type: 2}
   fadeMatPartial: {fileID: 2100000, guid: 23318623a8cd0be448a7b3224c439e93, type: 2}
   fadeMatFull: {fileID: 2100000, guid: 4602c3c0306778a469cea009a5792b26, type: 2}
@@ -58982,8 +58982,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e76eb513caf20a449febcfc7c9ded09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftHand: {fileID: 4451764485357024}
-  rightHand: {fileID: 4706276869002674}
+  leftHand: {fileID: 0}
+  rightHand: {fileID: 0}
   opaqueMat: {fileID: 2100000, guid: 41b9c1738c9020a4c95b413715468980, type: 2}
   fadeMatPartial: {fileID: 2100000, guid: 23318623a8cd0be448a7b3224c439e93, type: 2}
   fadeMatFull: {fileID: 2100000, guid: 4602c3c0306778a469cea009a5792b26, type: 2}
@@ -63264,8 +63264,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e76eb513caf20a449febcfc7c9ded09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftHand: {fileID: 4451764485357024}
-  rightHand: {fileID: 4706276869002674}
+  leftHand: {fileID: 0}
+  rightHand: {fileID: 0}
   opaqueMat: {fileID: 2100000, guid: 41b9c1738c9020a4c95b413715468980, type: 2}
   fadeMatPartial: {fileID: 2100000, guid: 23318623a8cd0be448a7b3224c439e93, type: 2}
   fadeMatFull: {fileID: 2100000, guid: 4602c3c0306778a469cea009a5792b26, type: 2}
@@ -82013,8 +82013,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85b8614ced9c55e49a64b78902fa4243, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftHand: {fileID: 4451764485357024}
-  rightHand: {fileID: 4706276869002674}
+  leftHand: {fileID: 0}
+  rightHand: {fileID: 0}
   opaqueMat: {fileID: 2100000, guid: 41b9c1738c9020a4c95b413715468980, type: 2}
   fadeMatPartial: {fileID: 2100000, guid: 23318623a8cd0be448a7b3224c439e93, type: 2}
   fadeMatFull: {fileID: 2100000, guid: 4602c3c0306778a469cea009a5792b26, type: 2}
@@ -83414,8 +83414,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2be4825c7bc720448ac781b12d2c173, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftHand: {fileID: 4451764485357024}
-  rightHand: {fileID: 4706276869002674}
+  leftHand: {fileID: 0}
+  rightHand: {fileID: 0}
   opaqueMat: {fileID: 2100000, guid: 41b9c1738c9020a4c95b413715468980, type: 2}
   fadeMatPartial: {fileID: 2100000, guid: 23318623a8cd0be448a7b3224c439e93, type: 2}
   fadeMatFull: {fileID: 2100000, guid: 4602c3c0306778a469cea009a5792b26, type: 2}
@@ -88867,8 +88867,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1295bfe3a2011940ae7283f1d910de5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftHand: {fileID: 4451764485357024}
-  rightHand: {fileID: 4706276869002674}
+  leftHand: {fileID: 0}
+  rightHand: {fileID: 0}
   opaqueMat: {fileID: 2100000, guid: 41b9c1738c9020a4c95b413715468980, type: 2}
   fadeMatPartial: {fileID: 2100000, guid: 23318623a8cd0be448a7b3224c439e93, type: 2}
   fadeMatFull: {fileID: 2100000, guid: 4602c3c0306778a469cea009a5792b26, type: 2}
