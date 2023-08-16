@@ -88,3 +88,17 @@ From our efforts to produce more naturalistic interactions for combat medic trai
     </td>
   </tr>
 </table>
+
+## Citation
+If you use any data or any code released in this repository, please cite this [article](https://openaccess.cms-conferences.org/publications/book/978-1-958651-26-1/article/978-1-958651-26-1_0).
+```bibtex
+@inproceedings{brett_talbot_open_2022,
+title = {Open Medical Gesture: An Open-Source Experiment in Naturalistic Physical Interactions for Mixed and Virtual Reality Simulations},
+author = {Thomas Brett Talbot and Chinmay Chinara},
+url = {https://openaccess.cms-conferences.org/publications/book/978-1-958651-26-1/article/978-1-958651-26-1_0},
+doi = {10.54941/ahfe1002054},
+year = {2022},
+date = {2022-01-01},
+urldate = {2022-09-13},
+}
+```
