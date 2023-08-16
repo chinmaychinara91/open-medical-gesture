@@ -13,7 +13,7 @@ OpenMG 2.0 SDK for Metamersive.
     </td>
     <td>
       <p align="center">
-        <img src="Documentation/images/autoinjector_2.png" width = 360px>
+        <img src="Documentation/gifs/autoinjector.gif" width = 360px>
         <br/>
         Autoinjector actuate
       </p>
@@ -25,14 +25,14 @@ OpenMG 2.0 SDK for Metamersive.
       <p align="center">
         <img src="Documentation/images/bandage_scissor_1_labelled.png" width = 360px>
         <br/>
-        Bandage Scissor
+        Bandage Scissors
       </p>
     </td>
     <td>
       <p align="center">
-        <img src="Documentation/images/bandage_scissor_2.png" width = 360px>
+        <img src="Documentation/gifs/bandage_scissors.gif" width = 360px>
         <br/>
-        Bandage Scissor open/close
+        Bandage Scissors open/close
       </p>
     </td>
   </tr>
@@ -64,9 +64,9 @@ OpenMG 2.0 SDK for Metamersive.
     </td>
     <td>
       <p align="center">
-        <img src="Documentation/images/needle_forceps_2.png" width = 360px>
+        <img src="Documentation/gifs/needle_forceps.gif" width = 360px>
         <br/>
-        Needle Forceps open
+        Needle Forceps open/close
       </p>
     </td>
   </tr>
