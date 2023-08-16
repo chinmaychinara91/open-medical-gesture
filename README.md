@@ -100,7 +100,7 @@ OpenMG 2.0 SDK for Metamersive.
       <p align="center">
         <img src="Documentation/gifs/scissor.gif" width = 360px>
         <br/>
-        Scissor open
+        Scissor open/close
       </p>
     </td>
   </tr>
