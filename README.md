@@ -1,5 +1,5 @@
 # Open Medical Gesture
-From our efforts to produce more naturalistic interactions for combat medic training for the military, USC has developed an open-source toolkit that enables direct hand-controlled responsive interactions that is sensor independent and can function with depth-sensing cameras, webcams, or sensory gloves. Natural approaches we have examined include the ability to manipulate virtual smart objects in a similar manner to how they are used in the real world.
+From our efforts to produce more naturalistic interactions for combat medic training for the military, [USC-ICT](https://ict.usc.edu/research/labs-groups/medical-virtual-reality/) has developed an open-source toolkit that enables direct hand-controlled responsive interactions that is sensor independent and can function with depth-sensing cameras, webcams, or sensory gloves. Natural approaches we have examined include the ability to manipulate virtual smart objects in a similar manner to how they are used in the real world.
 
 ## Hand Interactions
 <table>
