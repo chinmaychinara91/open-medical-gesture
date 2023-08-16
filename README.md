@@ -59,7 +59,7 @@ OpenMG 2.0 SDK for Metamersive.
       <p align="center">
         <img src="Documentation/images/needle_forceps_1 labelled.png" width = 360px>
         <br/>
-        Needle Forceps close
+        Needle Forceps
       </p>
     </td>
     <td>
@@ -76,7 +76,7 @@ OpenMG 2.0 SDK for Metamersive.
       <p align="center">
         <img src="Documentation/images/scalpel_1.png" width = 360px>
         <br/>
-        Scalpel pick
+        Scalpel
       </p>
     </td>
     <td>
@@ -93,7 +93,7 @@ OpenMG 2.0 SDK for Metamersive.
       <p align="center">
         <img src="Documentation/images/scissor_close_labelled.png" width = 360px>
         <br/>
-        Scissor close
+        Scissor
       </p>
     </td>
     <td>
