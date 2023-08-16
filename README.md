@@ -25,14 +25,14 @@ OpenMG 2.0 SDK for Metamersive.
       <p align="center">
         <img src="Documentation/images/bandage_scissor_1_labelled.png" width = 360px>
         <br/>
-        Bandage Scissor close
+        Bandage Scissor
       </p>
     </td>
     <td>
       <p align="center">
         <img src="Documentation/images/bandage_scissor_2.png" width = 360px>
         <br/>
-        Bandage Scissor open
+        Bandage Scissor open/close
       </p>
     </td>
   </tr>
@@ -42,14 +42,14 @@ OpenMG 2.0 SDK for Metamersive.
       <p align="center">
         <img src="Documentation/images/bandageroll_1.png" width = 360px>
         <br/>
-        Bandage Roll pick
+        Bandage Roll
       </p>
     </td>
     <td>
       <p align="center">
         <img src="Documentation/images/bandageroll_2.png" width = 360px>
         <br/>
-        Bandage Roll open
+        Bandage Roll open/close
       </p>
     </td>
   </tr>
@@ -93,14 +93,14 @@ OpenMG 2.0 SDK for Metamersive.
       <p align="center">
         <img src="Documentation/images/scissor_close_labelled.png" width = 360px>
         <br/>
-        Scissor
+        Scissors
       </p>
     </td>
     <td>
       <p align="center">
         <img src="Documentation/gifs/scissor.gif" width = 360px>
         <br/>
-        Scissor open/close
+        Scissors open/close
       </p>
     </td>
   </tr>
@@ -127,12 +127,12 @@ OpenMG 2.0 SDK for Metamersive.
       <p align="center">
         <img src="Documentation/images/trocar_1.png" width = 360px>
         <br/>
-        Trocar pick
+        Trocar
       </p>
     </td>
     <td>
       <p align="center">
-        <img src="Documentation/images/trocar_2.png" width = 360px>
+        <img src="Documentation/gifs/trocar.gif" width = 360px>
         <br/>
         Trocar use
       </p>
