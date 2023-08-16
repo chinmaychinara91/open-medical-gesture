@@ -1,4 +1,4 @@
-# openmg-2.0-metamersive
+# Open Medical Gesture
 OpenMG 2.0 SDK for Metamersive.
 
 ## Hand Interactions
