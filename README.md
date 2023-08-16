@@ -30,7 +30,7 @@ OpenMG 2.0 SDK for Metamersive.
     </td>
     <td>
       <p align="center">
-        <img src="Documentation/images/bandageroll_2.png" width = 360px>
+        <img src="Documentation/gifs/bandage_roll.gif" width = 360px>
         <br/>
         Bandage Roll open/close
       </p>
