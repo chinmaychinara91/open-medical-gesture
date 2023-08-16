@@ -43,6 +43,7 @@ VoiceSDK.Dictation.Runtime.csproj
 VoiceSDK.Editor.csproj
 VoiceSDK.Runtime.csproj
 openmg-2.0-metamersive.sln
+open-medical-gesture.sln
 .vsconfig
 Temp
 .vs
