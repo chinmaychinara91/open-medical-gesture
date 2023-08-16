@@ -98,7 +98,7 @@ OpenMG 2.0 SDK for Metamersive.
     </td>
     <td>
       <p align="center">
-        <img src="Documentation/images/scissor_open.png" width = 360px>
+        <img src="Documentation/gifs/scissor.gif" width = 360px>
         <br/>
         Scissor open
       </p>
