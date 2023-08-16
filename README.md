@@ -23,26 +23,9 @@ OpenMG 2.0 SDK for Metamersive.
   <tr>
     <td>
       <p align="center">
-        <img src="Documentation/images/bandage_scissor_1_labelled.png" width = 360px>
-        <br/>
-        Bandage Scissors
-      </p>
-    </td>
-    <td>
-      <p align="center">
         <img src="Documentation/gifs/bandage_scissors.gif" width = 360px>
         <br/>
         Bandage Scissors open/close
-      </p>
-    </td>
-  </tr>
-
-  <tr>
-    <td>
-      <p align="center">
-        <img src="Documentation/images/bandageroll_1.png" width = 360px>
-        <br/>
-        Bandage Roll
       </p>
     </td>
     <td>
@@ -57,26 +40,9 @@ OpenMG 2.0 SDK for Metamersive.
   <tr>
     <td>
       <p align="center">
-        <img src="Documentation/images/needle_forceps_1 labelled.png" width = 360px>
-        <br/>
-        Needle Forceps
-      </p>
-    </td>
-    <td>
-      <p align="center">
         <img src="Documentation/gifs/needle_forceps.gif" width = 360px>
         <br/>
         Needle Forceps open/close
-      </p>
-    </td>
-  </tr>
-
-  <tr>
-    <td>
-      <p align="center">
-        <img src="Documentation/images/scalpel_1.png" width = 360px>
-        <br/>
-        Scalpel
       </p>
     </td>
     <td>
@@ -91,26 +57,9 @@ OpenMG 2.0 SDK for Metamersive.
   <tr>
     <td>
       <p align="center">
-        <img src="Documentation/images/scissor_close_labelled.png" width = 360px>
-        <br/>
-        Scissors
-      </p>
-    </td>
-    <td>
-      <p align="center">
         <img src="Documentation/gifs/scissor.gif" width = 360px>
         <br/>
         Scissors open/close
-      </p>
-    </td>
-  </tr>
-
-  <tr>
-    <td>
-      <p align="center">
-        <img src="Documentation/images/syringe_unpress_labelled.png" width = 360px>
-        <br/>
-        Syringe
       </p>
     </td>
     <td>
@@ -125,33 +74,16 @@ OpenMG 2.0 SDK for Metamersive.
   <tr>
     <td>
       <p align="center">
-        <img src="Documentation/images/trocar_1.png" width = 360px>
-        <br/>
-        Trocar
-      </p>
-    </td>
-    <td>
-      <p align="center">
         <img src="Documentation/gifs/trocar.gif" width = 360px>
         <br/>
         Trocar use
       </p>
     </td>
-  </tr>
-
-  <tr>
     <td>
       <p align="center">
-        <img src="Documentation/images/drawer_closed.png" width = 360px>
+        <img src="Documentation/gifs/drawer.gif" width = 360px>
         <br/>
-        Drawer close
-      </p>
-    </td>
-    <td>
-      <p align="center">
-        <img src="Documentation/images/drawer_open.png" width = 360px>
-        <br/>
-        Drawer open
+        Drawer open/close
       </p>
     </td>
   </tr>
