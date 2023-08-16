@@ -81,7 +81,7 @@ OpenMG 2.0 SDK for Metamersive.
     </td>
     <td>
       <p align="center">
-        <img src="Documentation/images/scalpel_2.png" width = 360px>
+        <img src="Documentation/gifs/scalpel.gif" width = 360px>
         <br/>
         Scalpel use
       </p>
