@@ -91,7 +91,7 @@ public class ScalpelBehaviour : SmartObjectBehaviour
             transform.parent = homeTransform;
             rigidBody.isKinematic = false;
             rigidBody.useGravity = true;
-            Invoke("enableContact", 0.5f);
+            Invoke("enableContact", mainControl.GetComponent<ActivationDeactivationControls>().timeToActivate);
         }
     }
     public void enableContact()
