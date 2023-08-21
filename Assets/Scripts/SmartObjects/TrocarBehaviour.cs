@@ -79,20 +79,6 @@ public class TrocarBehaviour : SmartObjectBehaviour
     {
         base.RemoveFromHand();
 
-        //if (touchFlag == false)
-        //{
-        //    if (showFakeHand)
-        //    { 
-        //        fakeHand.SetActive(false);
-        //    }
-        //    leftHandRenderer.material = opaqueMat;
-        //    rightHandRenderer.material = opaqueMat;
-        //    transform.parent = homeTransform;
-        //    rigidBody.isKinematic = false;
-        //    rigidBody.useGravity = true;
-        //    Invoke("enableContact", mainControl.GetComponent<ActivationDeactivationControls>().timeToActivate);
-        //}
-
         StartCoroutine(RemoveFromHandCouroutine());
     }
 
