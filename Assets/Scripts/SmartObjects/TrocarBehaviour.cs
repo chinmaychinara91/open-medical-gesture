@@ -82,7 +82,7 @@ public class TrocarBehaviour : SmartObjectBehaviour
         StartCoroutine(RemoveFromHandCouroutine());
     }
 
-    public IEnumerator RemoveFromHandCouroutine()
+    private IEnumerator RemoveFromHandCouroutine()
     {
         if (touchFlag == false)
         {
@@ -100,7 +100,7 @@ public class TrocarBehaviour : SmartObjectBehaviour
         }
     }
 
-    public void enableContact()
+    private void enableContact()
     {
         touchFlag = true;
         interactionBehaviour.ignoreContact = false;
