@@ -65,7 +65,7 @@ public class SyringeBehaviour_50ml : SmartObjectBehaviour
         if (device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion_FacingCeiling
             || device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion_HmdMounted)
         {
-            if (touchFlag && (!rightHand.GetComponent<HasGrabbed>().hasObjectGrabbed))
+            if (touchFlag)// && (!rightHand.GetComponent<HasGrabbed>().hasObjectGrabbed))
             {
                 // no interaction defined for left hand as of now
                 if (interactionBehaviour.closestHoveringHand.ToString().Contains("left"))
@@ -126,6 +126,14 @@ public class SyringeBehaviour_50ml : SmartObjectBehaviour
     {
         base.RemoveFromHand();
 
+        if(isActiveAndEnabled)
+        {
+            StartCoroutine(RemoveFromHandCoroutine());
+        }
+    }
+
+    private IEnumerator RemoveFromHandCoroutine()
+    {
         if (device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion_FacingCeiling
             || device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion_HmdMounted)
         {
@@ -144,7 +152,8 @@ public class SyringeBehaviour_50ml : SmartObjectBehaviour
                 transform.GetChild(0).GetComponent<Rigidbody>().isKinematic = false;
                 transform.GetChild(0).GetComponent<Rigidbody>().useGravity = true;
                 //transform.GetChild(0).GetComponent<Collider>().isTrigger = false;
-                Invoke("enableContact", mainControl.GetComponent<ActivationDeactivationControls>().timeToActivate);
+                yield return new WaitForSeconds(1.0f);
+                enableContact();
             }
         }
         else if (device.m_DeviceName == HandTrackingDeviceController.DeviceName.Quest2)
@@ -158,12 +167,13 @@ public class SyringeBehaviour_50ml : SmartObjectBehaviour
                 transform.GetChild(0).GetComponent<Rigidbody>().isKinematic = false;
                 transform.GetChild(0).GetComponent<Rigidbody>().useGravity = true;
                 //transform.GetChild(0).GetComponent<Collider>().isTrigger = false;
-                Invoke("enableContact", mainControl.GetComponent<ActivationDeactivationControls>().timeToActivate);
+                yield return new WaitForSeconds(1.0f);
+                enableContact();
             }
         }
     }
 
-    public void enableContact()
+    private void enableContact()
     {
         touchFlag = true;
         pressFlag = false;
