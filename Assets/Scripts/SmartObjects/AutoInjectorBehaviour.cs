@@ -42,7 +42,7 @@ public class AutoInjectorBehaviour : SmartObjectBehaviour
     {
         base.AttachToHand();
 
-        if (touchFlag && (!rightHand.GetComponent<HasGrabbed>().hasObjectGrabbed))
+        if (touchFlag)// && (!rightHand.GetComponent<HasGrabbed>().hasObjectGrabbed))
         {
             // no interaction defined for left hand as of now
             if (interactionBehaviour.closestHoveringHand.ToString().Contains("left"))
@@ -82,6 +82,11 @@ public class AutoInjectorBehaviour : SmartObjectBehaviour
     {
         base.RemoveFromHand();
 
+        StartCoroutine(RemoveFromHandCoroutine());
+    }
+
+    private IEnumerator RemoveFromHandCoroutine()
+    {
         if (touchFlag == false)
         {
             if (showFakeHand)
@@ -97,10 +102,12 @@ public class AutoInjectorBehaviour : SmartObjectBehaviour
             transform.GetChild(0).GetComponent<Rigidbody>().isKinematic = false;
             transform.GetChild(0).GetComponent<Rigidbody>().useGravity = true;
             //transform.GetChild(0).GetComponent<Collider>().isTrigger = false;
-            Invoke("enableContact", mainControl.GetComponent<ActivationDeactivationControls>().timeToActivate);
+            yield return new WaitForSeconds(1.0f);
+            enableContact();
         }
     }
-    public void enableContact()
+
+    private void enableContact()
     {
         touchFlag = true;
         interactionBehaviour.ignoreContact = false;

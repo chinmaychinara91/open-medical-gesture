@@ -62,7 +62,7 @@ public class BandageScissorsBehaviour : SmartObjectBehaviour
     {
         base.AttachToHand();
 
-        if (touchFlag && (!rightHand.GetComponent<HasGrabbed>().hasObjectGrabbed))
+        if (touchFlag)// && (!rightHand.GetComponent<HasGrabbed>().hasObjectGrabbed))
         {
             // no interaction defined for left hand as of now
             if (interactionBehaviour.closestHoveringHand.ToString().Contains("left"))
@@ -102,6 +102,11 @@ public class BandageScissorsBehaviour : SmartObjectBehaviour
     {
         base.RemoveFromHand();
 
+        StartCoroutine(RemoveFromHandCoroutine());
+    }
+
+    private IEnumerator RemoveFromHandCoroutine()
+    {
         if (touchFlag == false)
         {
             if (showFakeHand)
@@ -117,15 +122,18 @@ public class BandageScissorsBehaviour : SmartObjectBehaviour
             rigidBody.isKinematic = false;
             rigidBody.useGravity = true;
 
-            Invoke("enableContact", mainControl.GetComponent<ActivationDeactivationControls>().timeToActivate);
+            yield return new WaitForSeconds(1.0f);
+            enableContact();
         }
     }
-    public void enableContact()
+
+    private void enableContact()
     {
         touchFlag = true;
         pressFlag = false;
         interactionBehaviour.ignoreContact = false;
     }
+
     public void Press()
     {
         if (pressFlag)

@@ -6,6 +6,7 @@
 using Oculus.Interaction;
 using UnityEngine;
 using OpenMg.SmartObjects;
+using System.Collections;
 
 public class ScalpelBehaviour : SmartObjectBehaviour
 {
@@ -43,7 +44,7 @@ public class ScalpelBehaviour : SmartObjectBehaviour
     {
         base.AttachToHand();
 
-        if (touchFlag && (!rightHand.GetComponent<HasGrabbed>().hasObjectGrabbed))
+        if (touchFlag)// && (!rightHand.GetComponent<HasGrabbed>().hasObjectGrabbed))
         {
             // no interaction defined for left hand as of now
             if (interactionBehaviour.closestHoveringHand.ToString().Contains("left"))
@@ -80,10 +81,15 @@ public class ScalpelBehaviour : SmartObjectBehaviour
     {
         base.RemoveFromHand();
 
+        StartCoroutine(RemoveFromHandCoroutine());
+    }
+
+    private IEnumerator RemoveFromHandCoroutine()
+    {
         if (touchFlag == false)
         {
             if (showFakeHand)
-            { 
+            {
                 fakeHand.SetActive(false);
             }
             leftHandRenderer.material = opaqueMat;
@@ -91,10 +97,12 @@ public class ScalpelBehaviour : SmartObjectBehaviour
             transform.parent = homeTransform;
             rigidBody.isKinematic = false;
             rigidBody.useGravity = true;
-            Invoke("enableContact", mainControl.GetComponent<ActivationDeactivationControls>().timeToActivate);
+            yield return new WaitForSeconds(1.0f);
+            enableContact();
         }
     }
-    public void enableContact()
+
+    private void enableContact()
     {
         touchFlag = true;
         interactionBehaviour.ignoreContact = false;

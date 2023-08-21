@@ -42,7 +42,7 @@ public class BandageRollBehaviour : SmartObjectBehaviour
     {
         base.AttachToHand();
 
-        if (touchFlag && (!rightHand.GetComponent<HasGrabbed>().hasObjectGrabbed))
+        if (touchFlag)// && (!rightHand.GetComponent<HasGrabbed>().hasObjectGrabbed))
         {
             // no interaction defined for left hand as of now
             if (interactionBehaviour.closestHoveringHand.ToString().Contains("left"))
@@ -81,10 +81,15 @@ public class BandageRollBehaviour : SmartObjectBehaviour
     {
         base.RemoveFromHand();
 
+        StartCoroutine(RemoveFromHandCoroutine());
+    }
+
+    private IEnumerator RemoveFromHandCoroutine()
+    {
         if (touchFlag == false)
         {
             if (showFakeHand)
-            { 
+            {
                 fakeHand.SetActive(false);
             }
             leftHandRenderer.material = opaqueMat;
@@ -94,10 +99,12 @@ public class BandageRollBehaviour : SmartObjectBehaviour
             rigidBody.useGravity = true;
             transform.GetChild(0).GetComponent<Rigidbody>().isKinematic = false;
             transform.GetChild(0).GetComponent<Rigidbody>().useGravity = true;
-            Invoke("enableContact", mainControl.GetComponent<ActivationDeactivationControls>().timeToActivate);
+            yield return new WaitForSeconds(1.0f);
+            enableContact();
         }
     }
-    public void enableContact()
+
+    private void enableContact()
     {
         touchFlag = true;
         interactionBehaviour.ignoreContact = false;
