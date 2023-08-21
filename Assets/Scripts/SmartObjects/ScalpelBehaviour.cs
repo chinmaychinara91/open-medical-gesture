@@ -89,7 +89,7 @@ public class ScalpelBehaviour : SmartObjectBehaviour
 
     private IEnumerator RemoveFromHandCoroutine()
     {
-        if (touchFlag == false)
+        if (touchFlag == false && fakeHand.activeSelf)
         {
             if (showFakeHand)
             {

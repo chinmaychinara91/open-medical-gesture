@@ -7,6 +7,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using OpenMg.SmartObjects;
+using Leap.Unity;
 
 public class OtoscopeBehaviour : SmartObjectBehaviour
 {
@@ -42,7 +43,7 @@ public class OtoscopeBehaviour : SmartObjectBehaviour
     {
         base.AttachToHand();
 
-        if (touchFlag && (!rightHand.GetComponent<HasGrabbed>().hasObjectGrabbed))
+        if (touchFlag)// && (!rightHand.GetComponent<HasGrabbed>().hasObjectGrabbed))
         {
             // no interaction defined for left hand as of now
             if (interactionBehaviour.closestHoveringHand.ToString().Contains("left"))
@@ -81,7 +82,15 @@ public class OtoscopeBehaviour : SmartObjectBehaviour
     {
         base.RemoveFromHand();
 
-        if (touchFlag == false)
+        if (isActiveAndEnabled)
+        {
+            StartCoroutine(RemoveFromHandCoroutine());
+        }
+    }
+
+    private IEnumerator RemoveFromHandCoroutine()
+    {
+        if (touchFlag == false && fakeHand.activeSelf)
         {
             if (showFakeHand)
             {
@@ -95,10 +104,12 @@ public class OtoscopeBehaviour : SmartObjectBehaviour
             //GetComponent<Collider>().isTrigger = false;
             transform.GetComponent<Rigidbody>().isKinematic = false;
             transform.GetComponent<Rigidbody>().useGravity = true;
-            Invoke("enableContact", mainControl.GetComponent<ActivationDeactivationControls>().timeToActivate);
+            yield return new WaitForSeconds(1.0f);
+            enableContact();
         }
     }
-    public void enableContact()
+
+    private void enableContact()
     {
         touchFlag = true;
         interactionBehaviour.ignoreContact = false;

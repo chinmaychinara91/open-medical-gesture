@@ -87,7 +87,7 @@ public class TrocarBehaviour : SmartObjectBehaviour
 
     private IEnumerator RemoveFromHandCoroutine()
     {
-        if (touchFlag == false)
+        if (touchFlag == false && fakeHand.activeSelf)
         {
             if (showFakeHand)
             {

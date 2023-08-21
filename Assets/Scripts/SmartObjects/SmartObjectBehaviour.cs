@@ -63,7 +63,7 @@ namespace OpenMg.SmartObjects
         public Transform rightHandAnchor; // about right wrist (maunually place the smartobject aligned under right wrist and note the transform)
 
         [HideInInspector]
-        public bool touchFlag = true; // for picking up an object
+        static public bool touchFlag = true; // for picking up an object
 
         [HideInInspector]
         public bool pressFlag = false; // for instruments with press functionality e.g. syringes

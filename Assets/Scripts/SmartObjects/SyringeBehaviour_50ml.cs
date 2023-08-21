@@ -137,7 +137,7 @@ public class SyringeBehaviour_50ml : SmartObjectBehaviour
         if (device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion_FacingCeiling
             || device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion_HmdMounted)
         {
-            if (touchFlag == false)
+            if (touchFlag == false && fakeHand.activeSelf)
             {
                 if (showFakeHand)
                 {
@@ -158,7 +158,7 @@ public class SyringeBehaviour_50ml : SmartObjectBehaviour
         }
         else if (device.m_DeviceName == HandTrackingDeviceController.DeviceName.Quest2)
         {
-            if (touchFlag == false)
+            if (touchFlag == false && fakeHand.activeSelf)
             {
                 //transform.parent = homeTransform;
                 rigidBody.isKinematic = false;
