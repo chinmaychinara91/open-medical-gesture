@@ -109,7 +109,7 @@ public class TrocarBehaviour : SmartObjectBehaviour
             transform.parent = homeTransform;
             rigidBody.isKinematic = false;
             rigidBody.useGravity = true;
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(1.0f);
             enableContact();
         }
     }
