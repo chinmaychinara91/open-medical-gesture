@@ -81,7 +81,10 @@ public class BandageRollBehaviour : SmartObjectBehaviour
     {
         base.RemoveFromHand();
 
-        StartCoroutine(RemoveFromHandCoroutine());
+        if (isActiveAndEnabled)
+        {
+            StartCoroutine(RemoveFromHandCoroutine());
+        }
     }
 
     private IEnumerator RemoveFromHandCoroutine()

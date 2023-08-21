@@ -102,7 +102,10 @@ public class BandageScissorsBehaviour : SmartObjectBehaviour
     {
         base.RemoveFromHand();
 
-        StartCoroutine(RemoveFromHandCoroutine());
+        if (isActiveAndEnabled)
+        {
+            StartCoroutine(RemoveFromHandCoroutine());
+        }
     }
 
     private IEnumerator RemoveFromHandCoroutine()

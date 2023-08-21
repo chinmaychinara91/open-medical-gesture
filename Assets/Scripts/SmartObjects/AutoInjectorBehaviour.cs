@@ -82,7 +82,10 @@ public class AutoInjectorBehaviour : SmartObjectBehaviour
     {
         base.RemoveFromHand();
 
-        StartCoroutine(RemoveFromHandCoroutine());
+        if (isActiveAndEnabled)
+        {
+            StartCoroutine(RemoveFromHandCoroutine());
+        }
     }
 
     private IEnumerator RemoveFromHandCoroutine()
