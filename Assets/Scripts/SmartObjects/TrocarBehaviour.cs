@@ -79,10 +79,10 @@ public class TrocarBehaviour : SmartObjectBehaviour
     {
         base.RemoveFromHand();
 
-        StartCoroutine(RemoveFromHandCouroutine());
+        StartCoroutine(RemoveFromHandCoroutine());
     }
 
-    private IEnumerator RemoveFromHandCouroutine()
+    private IEnumerator RemoveFromHandCoroutine()
     {
         if (touchFlag == false)
         {
