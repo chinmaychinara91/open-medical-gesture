@@ -6,19 +6,6 @@ From our efforts to produce more naturalistic interactions for combat medic trai
   <tr>
     <td>
       <p align="center">
-        <b>LEAP MOTION (HMD MOUNTED)</b>
-      </p>
-    </td>
-    <td>
-      <p align="center">
-        <b>LEAP MOTION (FACING CEILING)</b>
-      </p>
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      <p align="center">
         <img src="Documentation/gifs/auscultation.gif" width = 360px>
         <br/>
         Auscultation
@@ -26,9 +13,9 @@ From our efforts to produce more naturalistic interactions for combat medic trai
     </td>
     <td>
       <p align="center">
-        <img src="Documentation/gifs_leap_facing_ceiling/auscultation.gif" width = 360px>
+        <img src="Documentation/gifs/autoinjector.gif" width = 360px>
         <br/>
-        Auscultation
+        Autoinjector actuate
       </p>
     </td>
   </tr>
@@ -43,9 +30,9 @@ From our efforts to produce more naturalistic interactions for combat medic trai
     </td>
     <td>
       <p align="center">
-        <img src="Documentation/gifs_leap_facing_ceiling/bandage_scissors.gif" width = 360px>
+        <img src="Documentation/gifs/bandage_roll.gif" width = 360px>
         <br/>
-        Bandage Scissors open/close
+        Bandage Roll open/close
       </p>
     </td>
   </tr>
@@ -60,9 +47,9 @@ From our efforts to produce more naturalistic interactions for combat medic trai
     </td>
     <td>
       <p align="center">
-        <img src="Documentation/gifs_leap_facing_ceiling/needle_forceps.gif" width = 360px>
+        <img src="Documentation/gifs/scalpel.gif" width = 360px>
         <br/>
-        Needle Forceps open/close
+        Scalpel use
       </p>
     </td>
   </tr>
@@ -77,9 +64,9 @@ From our efforts to produce more naturalistic interactions for combat medic trai
     </td>
     <td>
       <p align="center">
-        <img src="Documentation/gifs_leap_facing_ceiling/scissor.gif" width = 360px>
+        <img src="Documentation/gifs/smooth_syringe_press.gif" width = 360px>
         <br/>
-        Scissors open/close
+        Syringe press/release
       </p>
     </td>
   </tr>
@@ -94,98 +81,12 @@ From our efforts to produce more naturalistic interactions for combat medic trai
     </td>
     <td>
       <p align="center">
-        <img src="Documentation/gifs_leap_facing_ceiling/trocar.gif" width = 360px>
-        <br/>
-        Trocar use
-      </p>
-    </td>
-  </tr>
-
-  <tr>
-    <td>
-      <p align="center">
-        <img src="Documentation/gifs/smooth_syringe_press.gif" width = 360px>
-        <br/>
-        Syringe press/release
-      </p>
-    </td>
-    <td>
-      <p align="center">
-        <img src="Documentation/gifs_leap_facing_ceiling/smooth_syringe_press.gif" width = 360px>
-        <br/>
-        Syringe press/release
-      </p>
-    </td>
-  </tr>
-
-  <tr>
-    <td>
-      <p align="center">
-        <img src="Documentation/gifs/bandage_roll.gif" width = 360px>
-        <br/>
-        Bandage roll open/close
-      </p>
-    </td>
-    <td>
-      <p align="center">
-        <img src="Documentation/gifs_leap_facing_ceiling/bandage_roll.gif" width = 360px>
-        <br/>
-        Bandage roll open/close
-      </p>
-    </td>
-  </tr>
-
-  <tr>
-    <td>
-      <p align="center">
-        <img src="Documentation/gifs/scalpel.gif" width = 360px>
-        <br/>
-        Scalpel use
-      </p>
-    </td>
-    <td>
-      <p align="center">
-        <img src="Documentation/gifs_leap_facing_ceiling/scalpel.gif" width = 360px>
-        <br/>
-        Scalpel use
-      </p>
-    </td>
-  </tr>
-
-  <tr>
-    <td>
-      <p align="center">
-        <img src="Documentation/gifs/autoinjector.gif" width = 360px>
-        <br/>
-        Autoinjector actuate
-      </p>
-    </td>
-    <td>
-      <p align="center">
-        <img src="Documentation/gifs_leap_facing_ceiling/autoinjector.gif" width = 360px>
-        <br/>
-        Autoinjector actuate
-      </p>
-    </td>
-  </tr>
-
-  <tr>
-    <td>
-      <p align="center">
         <img src="Documentation/gifs/drawer.gif" width = 360px>
         <br/>
-        Drawer push/pull
-      </p>
-    </td>
-    <td>
-      <p align="center">
-        <img src="Documentation/gifs_leap_facing_ceiling/drawer.gif" width = 360px>
-        <br/>
-        Drawer push/pull
+        Drawer open/close
       </p>
     </td>
   </tr>
-  
 </table>
 
 <table>
