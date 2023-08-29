@@ -4860,7 +4860,6 @@ MonoBehaviour:
   rightHandRenderer: {fileID: 0}
   leftHandAnchor: {fileID: 0}
   rightHandAnchor: {fileID: 0}
-  touchFlag: 1
   pressFlag: 0
   rigidBody: {fileID: 0}
   origPos: {x: 0, y: 0, z: 0}
@@ -5298,7 +5297,6 @@ MonoBehaviour:
   rightHandRenderer: {fileID: 0}
   leftHandAnchor: {fileID: 0}
   rightHandAnchor: {fileID: 0}
-  touchFlag: 1
   pressFlag: 0
   rigidBody: {fileID: 0}
   origPos: {x: 0, y: 0, z: 0}
@@ -10221,7 +10219,6 @@ MonoBehaviour:
   rightHandRenderer: {fileID: 0}
   leftHandAnchor: {fileID: 0}
   rightHandAnchor: {fileID: 0}
-  touchFlag: 1
   pressFlag: 0
   rigidBody: {fileID: 0}
   origPos: {x: 0, y: 0, z: 0}
@@ -11153,7 +11150,6 @@ MonoBehaviour:
   rightHandRenderer: {fileID: 0}
   leftHandAnchor: {fileID: 0}
   rightHandAnchor: {fileID: 0}
-  touchFlag: 1
   pressFlag: 0
   rigidBody: {fileID: 0}
   origPos: {x: 0, y: 0, z: 0}
@@ -17625,7 +17621,6 @@ MonoBehaviour:
   rightHandRenderer: {fileID: 0}
   leftHandAnchor: {fileID: 0}
   rightHandAnchor: {fileID: 0}
-  touchFlag: 1
   pressFlag: 0
   rigidBody: {fileID: 0}
   origPos: {x: 0, y: 0, z: 0}
@@ -18310,7 +18305,6 @@ MonoBehaviour:
   rightHandRenderer: {fileID: 0}
   leftHandAnchor: {fileID: 0}
   rightHandAnchor: {fileID: 0}
-  touchFlag: 1
   pressFlag: 0
   rigidBody: {fileID: 0}
   origPos: {x: 0, y: 0, z: 0}
@@ -20391,7 +20385,6 @@ MonoBehaviour:
   rightHandRenderer: {fileID: 0}
   leftHandAnchor: {fileID: 0}
   rightHandAnchor: {fileID: 0}
-  touchFlag: 1
   pressFlag: 0
   rigidBody: {fileID: 0}
   origPos: {x: 0, y: 0, z: 0}
@@ -20656,7 +20649,6 @@ MonoBehaviour:
   rightHandRenderer: {fileID: 0}
   leftHandAnchor: {fileID: 0}
   rightHandAnchor: {fileID: 0}
-  touchFlag: 1
   pressFlag: 0
   rigidBody: {fileID: 0}
   origPos: {x: 0, y: 0, z: 0}
@@ -22047,7 +22039,6 @@ MonoBehaviour:
   rightHandRenderer: {fileID: 0}
   leftHandAnchor: {fileID: 0}
   rightHandAnchor: {fileID: 0}
-  touchFlag: 1
   pressFlag: 0
   rigidBody: {fileID: 0}
   origPos: {x: 0, y: 0, z: 0}
@@ -30142,7 +30133,6 @@ MonoBehaviour:
   rightHandRenderer: {fileID: 0}
   leftHandAnchor: {fileID: 0}
   rightHandAnchor: {fileID: 0}
-  touchFlag: 1
   pressFlag: 0
   rigidBody: {fileID: 0}
   origPos: {x: 0, y: 0, z: 0}
@@ -33205,7 +33195,6 @@ MonoBehaviour:
   rightHandRenderer: {fileID: 0}
   leftHandAnchor: {fileID: 0}
   rightHandAnchor: {fileID: 0}
-  touchFlag: 1
   pressFlag: 0
   rigidBody: {fileID: 0}
   origPos: {x: 0, y: 0, z: 0}
@@ -33277,9 +33266,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1037298758}
-  m_LocalRotation: {x: -0.81477875, y: 0.06997672, z: 0.2727181, w: 0.50681716}
-  m_LocalPosition: {x: 0.432, y: 0.017, z: -0.0909}
-  m_LocalScale: {x: 0.6926688, y: 0.6926688, z: 0.6926688}
+  m_LocalRotation: {x: -0.8147787, y: 0.069976754, z: 0.27271804, w: 0.5068173}
+  m_LocalPosition: {x: 0.4319996, y: 0.01700011, z: -0.09090002}
+  m_LocalScale: {x: 0.6926687, y: 0.6926685, z: 0.6926685}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 677558042}
@@ -33302,7 +33291,7 @@ MonoBehaviour:
   _usesHandPose: 1
   _handPose:
     _handedness: 1
-    _fingersFreedom: 0100000001000000010000000100000001000000
+    _fingersFreedom: 0000000001000000010000000100000001000000
     _jointRotations:
     - {x: 0.39428666, y: -0.41464657, z: -0.009352386, w: 0.8200725}
     - {x: 0.2296331, y: -0.24162401, z: -0.113248914, w: 0.93598133}
@@ -35709,7 +35698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dd80cce060cac84196aad564598c039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_DeviceName: 0
+  m_DeviceName: 2
   isUsingRightHand: 1
   m_DataProvider: {fileID: 0}
   sensors:
@@ -45155,7 +45144,6 @@ MonoBehaviour:
   rightHandRenderer: {fileID: 0}
   leftHandAnchor: {fileID: 0}
   rightHandAnchor: {fileID: 0}
-  touchFlag: 1
   pressFlag: 0
   rigidBody: {fileID: 0}
   origPos: {x: 0, y: 0, z: 0}
@@ -46154,7 +46142,6 @@ MonoBehaviour:
   rightHandRenderer: {fileID: 0}
   leftHandAnchor: {fileID: 0}
   rightHandAnchor: {fileID: 0}
-  touchFlag: 1
   pressFlag: 0
   rigidBody: {fileID: 0}
   origPos: {x: 0, y: 0, z: 0}
@@ -58019,7 +58006,6 @@ MonoBehaviour:
   rightHandRenderer: {fileID: 0}
   leftHandAnchor: {fileID: 0}
   rightHandAnchor: {fileID: 0}
-  touchFlag: 1
   pressFlag: 0
   rigidBody: {fileID: 0}
   origPos: {x: 0, y: 0, z: 0}
@@ -58997,7 +58983,6 @@ MonoBehaviour:
   rightHandRenderer: {fileID: 0}
   leftHandAnchor: {fileID: 0}
   rightHandAnchor: {fileID: 0}
-  touchFlag: 1
   pressFlag: 0
   rigidBody: {fileID: 0}
   origPos: {x: 0, y: 0, z: 0}
@@ -61387,9 +61372,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2039207805}
   m_LocalRotation: {x: 0.3004501, y: 0.8818285, z: 0.120888814, w: 0.3427744}
-  m_LocalPosition: {x: -0.014288603, y: 0.21335427, z: -0.02103505}
-  m_LocalScale: {x: 1.4265032, y: 1.4265032, z: 1.4265032}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: -0.0187, y: 0.1953, z: -0.0235}
+  m_LocalScale: {x: 0.74, y: 0.74, z: 0.74}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 3865622487582924460}
   m_RootOrder: -1
@@ -63279,7 +63264,6 @@ MonoBehaviour:
   rightHandRenderer: {fileID: 0}
   leftHandAnchor: {fileID: 0}
   rightHandAnchor: {fileID: 0}
-  touchFlag: 1
   pressFlag: 0
   rigidBody: {fileID: 0}
   origPos: {x: 0, y: 0, z: 0}
@@ -70100,7 +70084,6 @@ MonoBehaviour:
   rightHandRenderer: {fileID: 0}
   leftHandAnchor: {fileID: 0}
   rightHandAnchor: {fileID: 0}
-  touchFlag: 1
   pressFlag: 0
   rigidBody: {fileID: 0}
   origPos: {x: 0, y: 0, z: 0}
@@ -70383,7 +70366,6 @@ MonoBehaviour:
   rightHandRenderer: {fileID: 0}
   leftHandAnchor: {fileID: 0}
   rightHandAnchor: {fileID: 0}
-  touchFlag: 1
   pressFlag: 0
   rigidBody: {fileID: 0}
   origPos: {x: 0, y: 0, z: 0}
@@ -80980,7 +80962,6 @@ MonoBehaviour:
   rightHandRenderer: {fileID: 0}
   leftHandAnchor: {fileID: 0}
   rightHandAnchor: {fileID: 0}
-  touchFlag: 1
   pressFlag: 0
   rigidBody: {fileID: 0}
   origPos: {x: 0, y: 0, z: 0}
@@ -82028,7 +82009,6 @@ MonoBehaviour:
   rightHandRenderer: {fileID: 0}
   leftHandAnchor: {fileID: 0}
   rightHandAnchor: {fileID: 0}
-  touchFlag: 1
   pressFlag: 0
   rigidBody: {fileID: 0}
   origPos: {x: 0, y: 0, z: 0}
@@ -83429,7 +83409,6 @@ MonoBehaviour:
   rightHandRenderer: {fileID: 0}
   leftHandAnchor: {fileID: 0}
   rightHandAnchor: {fileID: 0}
-  touchFlag: 1
   pressFlag: 0
   rigidBody: {fileID: 0}
   origPos: {x: 0, y: 0, z: 0}
@@ -84198,7 +84177,6 @@ MonoBehaviour:
   rightHandRenderer: {fileID: 0}
   leftHandAnchor: {fileID: 0}
   rightHandAnchor: {fileID: 0}
-  touchFlag: 1
   pressFlag: 0
   rigidBody: {fileID: 0}
   origPos: {x: 0, y: 0, z: 0}
@@ -88882,7 +88860,6 @@ MonoBehaviour:
   rightHandRenderer: {fileID: 0}
   leftHandAnchor: {fileID: 0}
   rightHandAnchor: {fileID: 0}
-  touchFlag: 1
   pressFlag: 0
   rigidBody: {fileID: 0}
   origPos: {x: 0, y: 0, z: 0}
