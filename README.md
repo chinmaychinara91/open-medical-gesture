@@ -92,18 +92,6 @@ From our efforts to produce more naturalistic interactions for combat medic trai
   
 </table>
 
-<table>
-  <tr>
-    <td>
-      <p align="center">
-        <img src="Documentation/gifs/ball_throw.gif" width = 748px>
-        <br/>
-        Ball throw
-      </p>
-    </td>
-  </tr>
-</table>
-
 ## Integration
 The entire updated documentation can be found in the [Documentation/OpenMG2.0 SDK+Code Setup Guide.pdf](https://github.com/chinmaychinara91/open-medical-gesture/blob/main/Documentation/OpenMG2.0%20SDK%2BCode%20Setup%20Guide.pdf) file in the repo.
 
