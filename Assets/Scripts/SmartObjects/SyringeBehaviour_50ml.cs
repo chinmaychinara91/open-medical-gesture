@@ -158,7 +158,7 @@ public class SyringeBehaviour_50ml : SmartObjectBehaviour
         }
         else if (device.m_DeviceName == HandTrackingDeviceController.DeviceName.Quest2)
         {
-            if (touchFlag == false && fakeHand.activeSelf)
+            if (touchFlag == false)
             {
                 //transform.parent = homeTransform;
                 rigidBody.isKinematic = false;
@@ -294,12 +294,12 @@ public class SyringeBehaviour_50ml : SmartObjectBehaviour
 
         if (device.m_DeviceName == HandTrackingDeviceController.DeviceName.Quest2)
         {
-            if (handGrabR.IsGrabbing && !attachHandFlag) // && GetComponent<Grabbable>().transform.gameObject == this)
+            if (handGrabR.IsGrabbing && !attachHandFlag)// && GetComponent<Grabbable>().transform.gameObject == this)
             {
                 AttachToHand();
                 attachHandFlag = true;
             }
-            else if (!handGrabR.IsGrabbing && attachHandFlag) // && GetComponent<Grabbable>().transform.gameObject == this)
+            else if (!handGrabR.IsGrabbing && attachHandFlag)// && GetComponent<Grabbable>().transform.gameObject == this)
             {
                 attachHandFlag = false;
                 RemoveFromHand();
