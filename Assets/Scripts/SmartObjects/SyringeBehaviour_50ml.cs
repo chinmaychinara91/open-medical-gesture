@@ -219,12 +219,12 @@ public class SyringeBehaviour_50ml : SmartObjectBehaviour
         {
             if (pressFlag)
             {
-                StartCoroutine(
-                    LerpRotationHandPose(
-                        handGrabInteractable.GetComponent<HandGrabPose>().HandPose,
-                        handGrabInteractable.GetComponent<HandGrabPose>().HandPose.JointRotations[0],
-                        Quaternion.Euler(syringePressRotationOculus),
-                        0.5f));
+                //StartCoroutine(
+                //    LerpRotationHandPose(
+                //        handGrabInteractable.GetComponent<HandGrabPose>().HandPose,
+                //        handGrabInteractable.GetComponent<HandGrabPose>().HandPose.JointRotations[0],
+                //        Quaternion.Euler(syringePressRotationOculus),
+                //        0.5f));
 
                 StartCoroutine(
                     LerpPosition(
@@ -271,12 +271,12 @@ public class SyringeBehaviour_50ml : SmartObjectBehaviour
         {
             if (pressFlag)
             {
-                StartCoroutine(
-                LerpRotationHandPose(
-                    handGrabInteractable.GetComponent<HandGrabPose>().HandPose,
-                    handGrabInteractable.GetComponent<HandGrabPose>().HandPose.JointRotations[0],
-                    Quaternion.Euler(syringeUnpressRotationOculus),
-                    0.5f));
+                //StartCoroutine(
+                //LerpRotationHandPose(
+                //    handGrabInteractable.GetComponent<HandGrabPose>().HandPose,
+                //    handGrabInteractable.GetComponent<HandGrabPose>().HandPose.JointRotations[0],
+                //    Quaternion.Euler(syringeUnpressRotationOculus),
+                //    0.5f));
 
                 StartCoroutine(
                     LerpPosition(
@@ -288,18 +288,19 @@ public class SyringeBehaviour_50ml : SmartObjectBehaviour
         }
     }
 
-    public void FixedUpdate()
+    override public void Update()
     {
         base.Update();
 
         if (device.m_DeviceName == HandTrackingDeviceController.DeviceName.Quest2)
         {
-            if (handGrabR.IsGrabbing && !attachHandFlag)// && GetComponent<Grabbable>().transform.gameObject == this)
+            if (handGrabR.IsGrabbing && !attachHandFlag
+                && handGrabR.SelectedInteractable.transform.name == "HandGrabInteractable_Syringe_Liquid_50ml")
             {
                 AttachToHand();
                 attachHandFlag = true;
             }
-            else if (!handGrabR.IsGrabbing && attachHandFlag)// && GetComponent<Grabbable>().transform.gameObject == this)
+            else if (!handGrabR.IsGrabbing && attachHandFlag)
             {
                 attachHandFlag = false;
                 RemoveFromHand();

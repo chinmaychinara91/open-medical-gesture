@@ -46,6 +46,9 @@ public class NeedleForcepsBehaviour : SmartObjectBehaviour
     [Tooltip("destination rotation Thumb")]
     public Vector3 pressRotationThumb;
 
+    //oculus
+    bool attachHandFlag = false;
+
     override public void Awake()
     {
         base.Awake();
@@ -62,39 +65,60 @@ public class NeedleForcepsBehaviour : SmartObjectBehaviour
     {
         base.AttachToHand();
 
-        if (touchFlag)// && (!rightHand.GetComponent<HasGrabbed>().hasObjectGrabbed))
+        if (device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion_FacingCeiling
+           || device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion_HmdMounted)
         {
-            // no interaction defined for left hand as of now
-            if (interactionBehaviour.closestHoveringHand.ToString().Contains("left"))
+            if (touchFlag)// && (!rightHand.GetComponent<HasGrabbed>().hasObjectGrabbed))
             {
-                
-            }
-
-            // if right hand is the closest hovering hand
-            else
-            {
-                if (showFakeHand)
+                // no interaction defined for left hand as of now
+                if (interactionBehaviour.closestHoveringHand.ToString().Contains("left"))
                 {
-                    fakeHand.SetActive(true);
-                    rightHandRenderer.material = fadeMatFull;
+
                 }
+
+                // if right hand is the closest hovering hand
                 else
                 {
-                    rightHandRenderer.material = fadeMatPartial;
+                    if (showFakeHand)
+                    {
+                        fakeHand.SetActive(true);
+                        rightHandRenderer.material = fadeMatFull;
+                    }
+                    else
+                    {
+                        rightHandRenderer.material = fadeMatPartial;
+                    }
+                    transform.parent = rightHandAnchor;
+                    transform.localPosition = positionAtRightHandAnchor;
+                    transform.localRotation = Quaternion.Euler(rotationAtRightHandAnchor);
                 }
-                transform.parent = rightHandAnchor;
+                interactionBehaviour.ignoreContact = true;
+
+                // as a whole
+                transform.GetComponent<BoxCollider>().enabled = false;
+                rigidBody.isKinematic = true;
+                rigidBody.useGravity = false;
+
+                pressFlag = true;
+                touchFlag = false;
+            }
+        }
+
+        else if(device.m_DeviceName == HandTrackingDeviceController.DeviceName.Quest2)
+        {
+            if (touchFlag)
+            {
+                //transform.parent = rightHandAnchor;
                 transform.localPosition = positionAtRightHandAnchor;
                 transform.localRotation = Quaternion.Euler(rotationAtRightHandAnchor);
+
+                transform.GetComponent<BoxCollider>().enabled = false;
+                rigidBody.isKinematic = true;
+                rigidBody.useGravity = false;
+
+                pressFlag = true;
+                touchFlag = false;
             }
-            interactionBehaviour.ignoreContact = true;
-
-            // as a whole
-            transform.GetComponent<BoxCollider>().enabled = false;
-            rigidBody.isKinematic = true;
-            rigidBody.useGravity = false;
-
-            pressFlag = true;
-            touchFlag = false;
         }
     }
 
@@ -110,23 +134,40 @@ public class NeedleForcepsBehaviour : SmartObjectBehaviour
 
     private IEnumerator RemoveFromHandCoroutine()
     {
-        if (touchFlag == false && fakeHand.activeSelf)
+        if (device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion_FacingCeiling
+           || device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion_HmdMounted)
         {
-            if (showFakeHand)
+            if (touchFlag == false && fakeHand.activeSelf)
             {
-                fakeHand.SetActive(false);
+                if (showFakeHand)
+                {
+                    fakeHand.SetActive(false);
+                }
+                leftHandRenderer.material = opaqueMat;
+                rightHandRenderer.material = opaqueMat;
+                transform.parent = homeTransform;
+
+                // as a whole
+                transform.GetComponent<BoxCollider>().enabled = true;
+                rigidBody.isKinematic = false;
+                rigidBody.useGravity = true;
+
+                yield return new WaitForSeconds(1.0f);
+                enableContact();
             }
-            leftHandRenderer.material = opaqueMat;
-            rightHandRenderer.material = opaqueMat;
-            transform.parent = homeTransform;
+        }
 
-            // as a whole
-            transform.GetComponent<BoxCollider>().enabled = true;
-            rigidBody.isKinematic = false;
-            rigidBody.useGravity = true;
+        else if(device.m_DeviceName == HandTrackingDeviceController.DeviceName.Quest2)
+        {
+            if (touchFlag == false)
+            {
+                transform.GetComponent<BoxCollider>().enabled = true;
+                rigidBody.isKinematic = false;
+                rigidBody.useGravity = true;
 
-            yield return new WaitForSeconds(1.0f);
-            enableContact();
+                yield return new WaitForSeconds(1.0f);
+                enableContact();
+            }
         }
     }
 
@@ -134,7 +175,10 @@ public class NeedleForcepsBehaviour : SmartObjectBehaviour
     {
         touchFlag = true;
         pressFlag = false;
-        interactionBehaviour.ignoreContact = false;
+
+        if (device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion_FacingCeiling
+           || device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion_HmdMounted)
+            interactionBehaviour.ignoreContact = false;
     }
 
     public void Press()
@@ -143,9 +187,14 @@ public class NeedleForcepsBehaviour : SmartObjectBehaviour
         {
             FindChild(transform.gameObject, "Left_Shank").transform.localRotation = Quaternion.Euler(pressRotationLeftShank);
             FindChild(transform.gameObject, "Right_Shank").transform.localRotation = Quaternion.Euler(pressRotationRightShank);
-            if (showFakeHand)
+
+            if (device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion_FacingCeiling
+           || device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion_HmdMounted)
             {
-                FindChild(transform.gameObject, "R_Finger_Thumb_A").transform.localRotation = Quaternion.Euler(pressRotationThumb);
+                if (showFakeHand)
+                {
+                    FindChild(transform.gameObject, "R_Finger_Thumb_A").transform.localRotation = Quaternion.Euler(pressRotationThumb);
+                }
             }
         }
     }
@@ -156,9 +205,34 @@ public class NeedleForcepsBehaviour : SmartObjectBehaviour
         {
             FindChild(transform.gameObject, "Left_Shank").transform.localRotation = Quaternion.Euler(unpressRotationLeftShank);
             FindChild(transform.gameObject, "Right_Shank").transform.localRotation = Quaternion.Euler(unpressRotationRightShank);
-            if (showFakeHand)
+
+            if (device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion_FacingCeiling
+           || device.m_DeviceName == HandTrackingDeviceController.DeviceName.LeapMotion_HmdMounted)
             {
-                FindChild(transform.gameObject, "R_Finger_Thumb_A").transform.localRotation = Quaternion.Euler(unpressRotationThumb);
+                if (showFakeHand)
+                {
+                    FindChild(transform.gameObject, "R_Finger_Thumb_A").transform.localRotation = Quaternion.Euler(unpressRotationThumb);
+                }
+            }
+        }
+    }
+
+    override public void Update()
+    {
+        base.Update();
+
+        if (device.m_DeviceName == HandTrackingDeviceController.DeviceName.Quest2)
+        {
+            if (handGrabR.IsGrabbing && !attachHandFlag
+                && handGrabR.SelectedInteractable.transform.name == "HandGrabInteractable_NeedleForceps")
+            {
+                AttachToHand();
+                attachHandFlag = true;
+            }
+            else if (!handGrabR.IsGrabbing && attachHandFlag)
+            {
+                attachHandFlag = false;
+                RemoveFromHand();
             }
         }
     }

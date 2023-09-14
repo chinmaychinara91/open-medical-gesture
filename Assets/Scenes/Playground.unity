@@ -18382,6 +18382,7 @@ GameObject:
   - component: {fileID: 677558035}
   - component: {fileID: 677558034}
   - component: {fileID: 677558044}
+  - component: {fileID: 677558045}
   m_Layer: 0
   m_Name: Liquid_50ml_Cylinder and needle
   m_TagString: Untagged
@@ -18655,8 +18656,8 @@ Transform:
   - {fileID: 1951058204}
   - {fileID: 1590130137}
   - {fileID: 1537044948}
-  - {fileID: 1603025500}
   - {fileID: 1037298759}
+  - {fileID: 1603025500}
   - {fileID: 1895428066}
   m_Father: {fileID: 584229554}
   m_RootOrder: 0
@@ -18679,6 +18680,40 @@ MonoBehaviour:
   _oneGrabTransformer: {fileID: 0}
   _twoGrabTransformer: {fileID: 0}
   _maxGrabPoints: -1
+--- !u!114 &677558045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 677558033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2f8f6e9e6f3e114b9bf9a57c2160615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pointable: {fileID: 677558044}
+  _whenRelease:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenMove:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenCancel:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &679599549
 GameObject:
   m_ObjectHideFlags: 0
@@ -31864,7 +31899,7 @@ GameObject:
   - component: {fileID: 986650718}
   - component: {fileID: 986650717}
   m_Layer: 0
-  m_Name: HandGrabInteractable
+  m_Name: HandGrabInteractable_Scissors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31902,7 +31937,7 @@ MonoBehaviour:
   _usesHandPose: 1
   _handPose:
     _handedness: 1
-    _fingersFreedom: 0200000002000000010000000100000000000000
+    _fingersFreedom: 0100000002000000010000000100000000000000
     _jointRotations:
     - {x: 0.46077394, y: -0.37563854, z: -0.07188125, w: 0.8008846}
     - {x: 0.25882748, y: -0.053323504, z: -0.13335623, w: 0.95518637}
@@ -31949,18 +31984,18 @@ MonoBehaviour:
     _thumbRequirement: 1
     _indexRequirement: 1
     _middleRequirement: 1
-    _ringRequirement: 0
-    _pinkyRequirement: 0
+    _ringRequirement: 1
+    _pinkyRequirement: 1
     _unselectMode: 0
   _palmGrabRules:
     _thumbRequirement: 1
     _indexRequirement: 2
-    _middleRequirement: 2
-    _ringRequirement: 2
+    _middleRequirement: 1
+    _ringRequirement: 1
     _pinkyRequirement: 1
     _unselectMode: 0
   _movementProvider: {fileID: 0}
-  _handAligment: 1
+  _handAligment: 3
   _handGrabPoses:
   - {fileID: 986650717}
 --- !u!1 &991183827
@@ -33475,7 +33510,7 @@ GameObject:
   - component: {fileID: 1037298761}
   - component: {fileID: 1037298760}
   m_Layer: 0
-  m_Name: HandGrabInteractable
+  m_Name: HandGrabInteractable_Syringe_Liquid_50ml
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35920,7 +35955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dd80cce060cac84196aad564598c039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_DeviceName: 1
+  m_DeviceName: 2
   isUsingRightHand: 1
   m_DataProvider: {fileID: 0}
   sensors:
@@ -44038,7 +44073,7 @@ GameObject:
   - component: {fileID: 1440839359}
   - component: {fileID: 1440839358}
   m_Layer: 0
-  m_Name: HandGrabInteractable
+  m_Name: HandGrabInteractable_BandageScissors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61013,7 +61048,7 @@ GameObject:
   - component: {fileID: 2013661351}
   - component: {fileID: 2013661350}
   m_Layer: 0
-  m_Name: HandGrabInteractable
+  m_Name: HandGrabInteractable_NeedleForceps
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70646,7 +70681,7 @@ MonoBehaviour:
   rigidBody: {fileID: 0}
   origPos: {x: 0, y: 0, z: 0}
   origRot: {x: 0, y: 0, z: 0, w: 0}
-  handGrabR: {fileID: 0}
+  handGrabR: {fileID: 731390410}
   device: {fileID: 1144902808}
   positionAtLeftHandAnchor: {x: 0, y: 0, z: 0}
   rotationAtLeftHandAnchor: {x: 0, y: 0, z: 0}
@@ -82625,7 +82660,7 @@ MonoBehaviour:
   rigidBody: {fileID: 0}
   origPos: {x: 0, y: 0, z: 0}
   origRot: {x: 0, y: 0, z: 0, w: 0}
-  handGrabR: {fileID: 0}
+  handGrabR: {fileID: 731390410}
   device: {fileID: 1144902808}
   positionAtLeftHandAnchor: {x: 0, y: 0, z: 0}
   rotationAtLeftHandAnchor: {x: 0, y: 0, z: 0}
@@ -84028,7 +84063,7 @@ MonoBehaviour:
   rigidBody: {fileID: 0}
   origPos: {x: 0, y: 0, z: 0}
   origRot: {x: 0, y: 0, z: 0, w: 0}
-  handGrabR: {fileID: 0}
+  handGrabR: {fileID: 731390410}
   device: {fileID: 1144902808}
   positionAtLeftHandAnchor: {x: 0, y: 0, z: 0}
   rotationAtLeftHandAnchor: {x: 0, y: 0, z: 0}
