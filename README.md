@@ -94,6 +94,7 @@ From our efforts to produce more naturalistic interactions for combat medic trai
 
 ## Integration
 The entire updated documentation can be found in the [Documentation/OpenMG2.0 SDK+Code Setup Guide.pdf](https://github.com/chinmaychinara91/open-medical-gesture/blob/main/Documentation/OpenMG2.0%20SDK%2BCode%20Setup%20Guide.pdf) file in the repo.
+Either clone this repo or use the [unitypackage](https://drive.google.com/drive/folders/1PoRrG6cwN4gqjirx7aCeYGcsiRBY12q-?usp=sharing) as per the document version above.
 
 ## Citation
 If you use any data or any code released in this repository, please cite this [article](https://openaccess.cms-conferences.org/publications/book/978-1-958651-26-1/article/978-1-958651-26-1_0).
