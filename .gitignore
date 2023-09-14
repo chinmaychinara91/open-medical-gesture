@@ -50,3 +50,5 @@ Temp
 obj
 Experimental
 Experimental.meta
+*.csproj
+*.htm
