@@ -185,7 +185,7 @@ From our efforts to produce more naturalistic interactions for combat medic trai
       <p align="center">
         <img src="Documentation/gifs_oculus_quest2/smooth_syringe_press.gif" width = 245px>
         <br/>
-        Syringe press/release (TBD)
+        Syringe press/release (gif to be updated)
       </p>
     </td>
   </tr>
@@ -209,7 +209,7 @@ From our efforts to produce more naturalistic interactions for combat medic trai
       <p align="center">
         <img src="Documentation/gifs_oculus_quest2/bandage_scissors.gif" width = 245px>
         <br/>
-        Bandage Scissors open/close (TBD)
+        Bandage Scissors open/close (gif to be updated)
       </p>
     </td>
   </tr>
@@ -233,7 +233,7 @@ From our efforts to produce more naturalistic interactions for combat medic trai
       <p align="center">
         <img src="Documentation/gifs_oculus_quest2/needle_forceps.gif" width = 245px>
         <br/>
-        Needle Forceps open/close (TBD)
+        Needle Forceps open/close (gif to be updated)
       </p>
     </td>
   </tr>
@@ -257,7 +257,7 @@ From our efforts to produce more naturalistic interactions for combat medic trai
       <p align="center">
         <img src="Documentation/gifs_oculus_quest2/scissor.gif" width = 245px>
         <br/>
-        Scissors open/close (TBD)
+        Scissors open/close (gif to be updated)
       </p>
     </td>
   </tr>
