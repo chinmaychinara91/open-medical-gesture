@@ -15,19 +15,31 @@ From our efforts to produce more naturalistic interactions for combat medic trai
         <b>Leap motion facing ceiling</b>
       </p>
     </td>
+    <td>
+      <p align="center">
+        <b>Oculus Quest2</b>
+      </p>
+    </td>
   </tr>
   
   <tr>
     <td>
       <p align="center">
-        <img src="Documentation/gifs/auscultation.gif" width = 360px>
+        <img src="Documentation/gifs/auscultation.gif" width = 310px>
         <br/>
         Auscultation
       </p>
     </td>
     <td>
       <p align="center">
-        <img src="Documentation/gifs_leap_facing_ceiling/auscultation.gif" width = 360px>
+        <img src="Documentation/gifs_leap_facing_ceiling/auscultation.gif" width = 310px>
+        <br/>
+        Auscultation
+      </p>
+    </td>
+    <td>
+      <p align="center">
+        <img src="Documentation/gifs_oculus_quest2/auscultation.gif" width = 310px>
         <br/>
         Auscultation
       </p>
@@ -37,65 +49,21 @@ From our efforts to produce more naturalistic interactions for combat medic trai
   <tr>
     <td>
       <p align="center">
-        <img src="Documentation/gifs/bandage_scissors.gif" width = 360px>
-        <br/>
-        Bandage Scissors open/close
-      </p>
-    </td>
-    <td>
-      <p align="center">
-        <img src="Documentation/gifs_leap_facing_ceiling/bandage_scissors.gif" width = 360px>
-        <br/>
-        Bandage Scissors open/close
-      </p>
-    </td>
-  </tr>
-
-  <tr>
-    <td>
-      <p align="center">
-        <img src="Documentation/gifs/needle_forceps.gif" width = 360px>
-        <br/>
-        Needle Forceps open/close
-      </p>
-    </td>
-    <td>
-      <p align="center">
-        <img src="Documentation/gifs_leap_facing_ceiling/needle_forceps.gif" width = 360px>
-        <br/>
-        Needle Forceps open/close
-      </p>
-    </td>
-  </tr>
-
-  <tr>
-    <td>
-      <p align="center">
-        <img src="Documentation/gifs/scissor.gif" width = 360px>
-        <br/>
-        Scissors open/close
-      </p>
-    </td>
-    <td>
-      <p align="center">
-        <img src="Documentation/gifs_leap_facing_ceiling/scissor.gif" width = 360px>
-        <br/>
-        Scissors open/close
-      </p>
-    </td>
-  </tr>
-
-  <tr>
-    <td>
-      <p align="center">
-        <img src="Documentation/gifs/trocar.gif" width = 360px>
+        <img src="Documentation/gifs/trocar.gif" width = 310px>
         <br/>
         Trocar use
       </p>
     </td>
     <td>
       <p align="center">
-        <img src="Documentation/gifs_leap_facing_ceiling/trocar.gif" width = 360px>
+        <img src="Documentation/gifs_leap_facing_ceiling/trocar.gif" width = 310px>
+        <br/>
+        Trocar use
+      </p>
+    </td>
+    <td>
+      <p align="center">
+        <img src="Documentation/gifs_oculus_quest2/trocar.gif" width = 310px>
         <br/>
         Trocar use
       </p>
@@ -105,31 +73,21 @@ From our efforts to produce more naturalistic interactions for combat medic trai
   <tr>
     <td>
       <p align="center">
-        <img src="Documentation/gifs/smooth_syringe_press.gif" width = 360px>
-        <br/>
-        Syringe press/release
-      </p>
-    </td>
-    <td>
-      <p align="center">
-        <img src="Documentation/gifs_leap_facing_ceiling/smooth_syringe_press.gif" width = 360px>
-        <br/>
-        Syringe press/release
-      </p>
-    </td>
-  </tr>
-
-  <tr>
-    <td>
-      <p align="center">
-        <img src="Documentation/gifs/bandage_roll.gif" width = 360px>
+        <img src="Documentation/gifs/bandage_roll.gif" width = 310px>
         <br/>
         Bandage roll open/close
       </p>
     </td>
     <td>
       <p align="center">
-        <img src="Documentation/gifs_leap_facing_ceiling/bandage_roll.gif" width = 360px>
+        <img src="Documentation/gifs_leap_facing_ceiling/bandage_roll.gif" width = 310px>
+        <br/>
+        Bandage roll open/close
+      </p>
+    </td>
+    <td>
+      <p align="center">
+        <img src="Documentation/gifs_oculus_quest2/bandage_roll.gif" width = 310px>
         <br/>
         Bandage roll open/close
       </p>
@@ -139,14 +97,21 @@ From our efforts to produce more naturalistic interactions for combat medic trai
   <tr>
     <td>
       <p align="center">
-        <img src="Documentation/gifs/scalpel.gif" width = 360px>
+        <img src="Documentation/gifs/scalpel.gif" width = 310px>
         <br/>
         Scalpel use
       </p>
     </td>
     <td>
       <p align="center">
-        <img src="Documentation/gifs_leap_facing_ceiling/scalpel.gif" width = 360px>
+        <img src="Documentation/gifs_leap_facing_ceiling/scalpel.gif" width = 310px>
+        <br/>
+        Scalpel use
+      </p>
+    </td>
+    <td>
+      <p align="center">
+        <img src="Documentation/gifs_oculus_quest2/scalpel.gif" width = 310px>
         <br/>
         Scalpel use
       </p>
@@ -156,14 +121,21 @@ From our efforts to produce more naturalistic interactions for combat medic trai
   <tr>
     <td>
       <p align="center">
-        <img src="Documentation/gifs/autoinjector.gif" width = 360px>
+        <img src="Documentation/gifs/autoinjector.gif" width = 310px>
         <br/>
         Autoinjector actuate
       </p>
     </td>
     <td>
       <p align="center">
-        <img src="Documentation/gifs_leap_facing_ceiling/autoinjector.gif" width = 360px>
+        <img src="Documentation/gifs_leap_facing_ceiling/autoinjector.gif" width = 310px>
+        <br/>
+        Autoinjector actuate
+      </p>
+    </td>
+     <td>
+      <p align="center">
+        <img src="Documentation/gifs_oculus_quest2/autoinjector.gif" width = 310px>
         <br/>
         Autoinjector actuate
       </p>
@@ -173,16 +145,119 @@ From our efforts to produce more naturalistic interactions for combat medic trai
   <tr>
     <td>
       <p align="center">
-        <img src="Documentation/gifs/drawer.gif" width = 360px>
+        <img src="Documentation/gifs/drawer.gif" width = 310px>
         <br/>
         Drawer push/pull
       </p>
     </td>
     <td>
       <p align="center">
-        <img src="Documentation/gifs_leap_facing_ceiling/drawer.gif" width = 360px>
+        <img src="Documentation/gifs_leap_facing_ceiling/drawer.gif" width = 310px>
         <br/>
         Drawer push/pull
+      </p>
+    </td>
+    <td>
+      <p align="center">
+        <img src="Documentation/gifs_oculus_quest2/drawer.gif" width = 310px>
+        <br/>
+        Drawer push/pull
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <p align="center">
+        <img src="Documentation/gifs/smooth_syringe_press.gif" width = 310px>
+        <br/>
+        Syringe press/release
+      </p>
+    </td>
+    <td>
+      <p align="center">
+        <img src="Documentation/gifs_leap_facing_ceiling/smooth_syringe_press.gif" width = 310px>
+        <br/>
+        Syringe press/release
+      </p>
+    </td>
+    <td>
+      <p align="center">
+        <img src="Documentation/gifs_oculus_quest2/smooth_syringe_press.gif" width = 310px>
+        <br/>
+        Syringe press/release (TBD)
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <p align="center">
+        <img src="Documentation/gifs/bandage_scissors.gif" width = 310px>
+        <br/>
+        Bandage Scissors open/close
+      </p>
+    </td>
+    <td>
+      <p align="center">
+        <img src="Documentation/gifs_leap_facing_ceiling/bandage_scissors.gif" width = 310px>
+        <br/>
+        Bandage Scissors open/close
+      </p>
+    </td>
+    <td>
+      <p align="center">
+        <img src="Documentation/gifs_oculus_quest2/bandage_scissors.gif" width = 310px>
+        <br/>
+        Bandage Scissors open/close (TBD)
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <p align="center">
+        <img src="Documentation/gifs/needle_forceps.gif" width = 310px>
+        <br/>
+        Needle Forceps open/close
+      </p>
+    </td>
+    <td>
+      <p align="center">
+        <img src="Documentation/gifs_leap_facing_ceiling/needle_forceps.gif" width = 310px>
+        <br/>
+        Needle Forceps open/close
+      </p>
+    </td>
+    <td>
+      <p align="center">
+        <img src="Documentation/gifs_oculus_quest2/needle_forceps.gif" width = 310px>
+        <br/>
+        Needle Forceps open/close (TBD)
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <p align="center">
+        <img src="Documentation/gifs/scissor.gif" width = 310px>
+        <br/>
+        Scissors open/close
+      </p>
+    </td>
+    <td>
+      <p align="center">
+        <img src="Documentation/gifs_leap_facing_ceiling/scissor.gif" width = 310px>
+        <br/>
+        Scissors open/close
+      </p>
+    </td>
+    <td>
+      <p align="center">
+        <img src="Documentation/gifs_oculus_quest2/scissor.gif" width = 310px>
+        <br/>
+        Scissors open/close (TBD)
       </p>
     </td>
   </tr>
