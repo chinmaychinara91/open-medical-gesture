@@ -25,21 +25,21 @@ From our efforts to produce more naturalistic interactions for combat medic trai
   <tr>
     <td>
       <p align="center">
-        <img src="Documentation/gifs/auscultation.gif" width = 210px>
+        <img src="Documentation/gifs/auscultation.gif" width = 260px>
         <br/>
         Auscultation
       </p>
     </td>
     <td>
       <p align="center">
-        <img src="Documentation/gifs_leap_facing_ceiling/auscultation.gif" width = 210px>
+        <img src="Documentation/gifs_leap_facing_ceiling/auscultation.gif" width = 260px>
         <br/>
         Auscultation
       </p>
     </td>
     <td>
       <p align="center">
-        <img src="Documentation/gifs_oculus_quest2/auscultation.gif" width = 210px>
+        <img src="Documentation/gifs_oculus_quest2/auscultation.gif" width = 260px>
         <br/>
         Auscultation
       </p>
