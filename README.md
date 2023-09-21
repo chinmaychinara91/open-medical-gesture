@@ -27,7 +27,7 @@ From our efforts to produce more naturalistic interactions for combat medic trai
       <p align="center">
         <img src="Documentation/gifs/auscultation.gif" width = 245px>
         <br/>
-        Auscultation
+        <br/>
       </p>
     </td>
     <td>
@@ -41,17 +41,17 @@ From our efforts to produce more naturalistic interactions for combat medic trai
       <p align="center">
         <img src="Documentation/gifs_oculus_quest2/auscultation.gif" width = 245px>
         <br/>
-        Auscultation
+        <br/>
       </p>
     </td>
   </tr>
-
+  
   <tr>
     <td>
       <p align="center">
         <img src="Documentation/gifs/trocar.gif" width = 245px>
         <br/>
-        Trocar use
+        <br/>
       </p>
     </td>
     <td>
@@ -65,7 +65,7 @@ From our efforts to produce more naturalistic interactions for combat medic trai
       <p align="center">
         <img src="Documentation/gifs_oculus_quest2/trocar.gif" width = 245px>
         <br/>
-        Trocar use
+        <br/>
       </p>
     </td>
   </tr>
@@ -75,7 +75,7 @@ From our efforts to produce more naturalistic interactions for combat medic trai
       <p align="center">
         <img src="Documentation/gifs/bandage_roll.gif" width = 245px>
         <br/>
-        Bandage roll open/close
+        <br/>
       </p>
     </td>
     <td>
@@ -89,7 +89,7 @@ From our efforts to produce more naturalistic interactions for combat medic trai
       <p align="center">
         <img src="Documentation/gifs_oculus_quest2/bandage_roll.gif" width = 245px>
         <br/>
-        Bandage roll open/close
+        <br/>
       </p>
     </td>
   </tr>
@@ -99,7 +99,7 @@ From our efforts to produce more naturalistic interactions for combat medic trai
       <p align="center">
         <img src="Documentation/gifs/scalpel.gif" width = 245px>
         <br/>
-        Scalpel use
+        <br/>
       </p>
     </td>
     <td>
@@ -113,7 +113,7 @@ From our efforts to produce more naturalistic interactions for combat medic trai
       <p align="center">
         <img src="Documentation/gifs_oculus_quest2/scalpel.gif" width = 245px>
         <br/>
-        Scalpel use
+        <br/>
       </p>
     </td>
   </tr>
@@ -123,7 +123,7 @@ From our efforts to produce more naturalistic interactions for combat medic trai
       <p align="center">
         <img src="Documentation/gifs/autoinjector.gif" width = 245px>
         <br/>
-        Autoinjector actuate
+        <br/>
       </p>
     </td>
     <td>
@@ -137,7 +137,7 @@ From our efforts to produce more naturalistic interactions for combat medic trai
       <p align="center">
         <img src="Documentation/gifs_oculus_quest2/autoinjector.gif" width = 245px>
         <br/>
-        Autoinjector actuate
+        <br/>
       </p>
     </td>
   </tr>
@@ -147,7 +147,7 @@ From our efforts to produce more naturalistic interactions for combat medic trai
       <p align="center">
         <img src="Documentation/gifs/drawer.gif" width = 245px>
         <br/>
-        Drawer push/pull
+        <br/>
       </p>
     </td>
     <td>
@@ -161,7 +161,7 @@ From our efforts to produce more naturalistic interactions for combat medic trai
       <p align="center">
         <img src="Documentation/gifs_oculus_quest2/drawer.gif" width = 245px>
         <br/>
-        Drawer push/pull
+        <br/>
       </p>
     </td>
   </tr>
@@ -171,7 +171,7 @@ From our efforts to produce more naturalistic interactions for combat medic trai
       <p align="center">
         <img src="Documentation/gifs/smooth_syringe_press.gif" width = 245px>
         <br/>
-        Syringe press/release
+        <br/>
       </p>
     </td>
     <td>
@@ -195,7 +195,7 @@ From our efforts to produce more naturalistic interactions for combat medic trai
       <p align="center">
         <img src="Documentation/gifs/bandage_scissors.gif" width = 245px>
         <br/>
-        Bandage Scissors open/close
+        <br/>
       </p>
     </td>
     <td>
@@ -219,7 +219,7 @@ From our efforts to produce more naturalistic interactions for combat medic trai
       <p align="center">
         <img src="Documentation/gifs/needle_forceps.gif" width = 245px>
         <br/>
-        Needle Forceps open/close
+        <br/>
       </p>
     </td>
     <td>
@@ -243,7 +243,7 @@ From our efforts to produce more naturalistic interactions for combat medic trai
       <p align="center">
         <img src="Documentation/gifs/scissor.gif" width = 245px>
         <br/>
-        Scissors open/close
+        <br/>
       </p>
     </td>
     <td>
